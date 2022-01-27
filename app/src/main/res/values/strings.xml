@@ -1,0 +1,488 @@
+<resources>
+
+    <string name="app_logo">Combo Analyzer</string>
+    <string name="app_name">Combo</string>
+    <string name="pact_pw">88888888</string>
+
+<!--    <string name="pact_ssid_name1">AndroidWifi</string>-->
+    <string name="pact_ssid_name1">CA</string>
+    <string name="pact_ssid_name2">DS</string>
+<!--    <string name="pact_ssid_name2">AWSI</string>-->
+<!--    <string name="pact_ssid_name2">PACT</string>-->
+    <string name="ip_address">192.168.10.1</string>
+<!--        <string name="ip_address">192.168.0.15</string>-->
+
+<!--    Emulator SSID -->
+<!--    <string name="pact_ssid_name1">Dabin</string>-->
+<!--    <string name="pact_ssid_name2">AndroidWifi</string>-->
+<!--    <string name="ip_address">192.168.10.1</string>-->
+<!--    <string name="ip_address">192.168.0.9</string>-->
+
+    <!--Top Menu String-->
+    <string name="mod5g_name">5G/LTE</string>
+    <string name="vswr_name">VSWR</string>
+    <string name="dtf_name">DTF</string>
+    <string name="sa_name">SA</string>
+    <string name="sg_name">SG</string>
+    <string name="cableloss_name">Cable Loss</string>
+
+    <string name="vswr_mode_name">VSWR</string>
+    <string name="rl_mode_name">RL_</string>
+    <string name="dtf_vswr_mode_name">DTF_VSWR</string>
+    <string name="dtf_rl_mode_name">DTF_RL</string>
+    <string name="cl_mode_name">CL</string>
+    <string name="sa_mode_name">SA</string>
+
+
+    <!--Graph TopRight Menu-->
+    <string name="return_loss">RL</string>
+
+    <!--LayoutBase Menu-->
+    <string name="measurement_name">Measurement</string>
+    <string name="frequency_name">Frequency</string>
+    <string name="distance_name">Distance</string>
+    <string name="amplitude_name">Amplitude</string>
+    <string name="marker_name">Marker</string>
+    <string name="limit_name">Limit</string>
+    <string name="sweep_name">Sweep</string>
+    <string name="freq_dist_name">Freq/Dist</string>
+    <string name="calibration_name">Calibration</string>
+    <string name="system_name">System</string>
+
+    <string name="meas_short_name">Meas</string>
+    <string name="freq_short_name">Freq</string>
+    <string name="amp_short_name">Amp</string>
+    <string name="limit_short_name">Limit</string>
+    <string name="sweep_short_name">Sweep</string>
+    <string name="freq_dist_short_name">Freq/Dist</string>
+    <string name="cal_short_name">Cal</string>
+    <string name="sys_short_name">Sys</string>
+
+    <!--Right Menu-->
+    <string name="start_name">Start</string>
+    <string name="stop_name">Stop</string>
+    <string name="back_name">Back</string>
+
+    <!--DemodulationProfileView1-->
+    <string name="marker1_name">M1</string>
+    <string name="marker2_name">M2</string>
+    <string name="marker3_name">M3</string>
+    <string name="marker4_name">M4</string>
+    <string name="marker5_name">M5</string>
+
+    <!--Dialog-->
+    <string name="screenshot_name">Screen Shot</string>
+    <string name="save_name">Save</string>
+    <string name="cancel_name">Cancel</string>
+    <string name="calibration_comp">Complete Calibration</string>
+    <string name="version_info_title">Version Information</string>
+    <string name="exit_name">Exit</string>
+    <string name="prop_velocity_dialog_title">Propagation Velocity</string>
+    <string name="ok_name">OK</string>
+
+    <!--system version dialog-->
+    <string name="app_version_name">App Version</string>
+    <string name="fw_version_name">FW Version</string>
+
+    <!--system recall dialog-->
+    <string name="recall_name">Recall</string>
+    <string name="name_name">Name</string>
+    <string name="type_name">Type</string>
+    <string name="size_name">Size (B)</string>
+    <string name="modified_name">Modified</string>
+    <string name="recall_off">Recall\nOff</string>
+    <string name="recall_ok_cancel_message">Press \'OK\' button to continue recalling file or \'Cancel\' to cancel</string>
+
+    <!--calibration dialog-->
+    <string name="cal_type">Cal Type</string>
+    <string name="standard_name">Standard</string>
+    <string name="flex_name">Flex</string>
+
+    <!--Screenshot-->
+    <string name="file_name">File Name</string>
+    <string name="file_type">File Type</string>
+
+    <!--Wifi-->
+    <string name="wifi_dialog_title">Available Network\'s SSID</string>
+    <string name="apply_name">Apply</string>
+    <string name="wifi_ap_name">PACT</string>
+
+    <!--Preset-->
+    <string name="preset_name">Preset</string>
+    <string name="band_preset_name">Band Auto Configuration</string>
+
+    <string name="wcdma_3g">3G\nWCDMA</string>
+    <string name="lte_4g">4G\nLTE</string>
+    <string name="nr_5g">5G\nNR</string>
+
+    <string name="dl_2165">DL\n2165 MHz</string>
+    <string name="ul_1975">UL\n1975 MHz</string>
+
+    <string name="dl_995">DL\n995 MHz</string>
+    <string name="ul_910">UL\n910 MHz</string>
+
+    <string name="dl_1840">DL\n1840 MHz</string>
+    <string name="ul_1745">UL\n1745 MHz</string>
+
+    <string name="dl_1855">DL\n1855 MHz</string>
+    <string name="ul_1760">UL\n1760 MHz</string>
+
+    <string name="dl_2155">DL\n2155 MHz</string>
+    <string name="ul_1965">UL\n1965 MHz</string>
+
+    <string name="nr_3550">3550 MHz</string>
+
+    <!--cableList-->
+    <string name="cable_list_name">Cable List</string>
+    <string name="cable_name">Cable Name : </string>
+    <string name="prop_velocity_name">Prop Velocity : </string>
+    <string name="cable_freq_name">Freq(MHz)</string>
+    <string name="cable_loss_name">Loss(dB/m)</string>
+
+    <string name="save_measure_menu">Measurement\n(.dat)</string>
+    <string name="save_setup_menu">Setup\n(.stp)</string>
+    <string name="save_screenshot_menu">Screen Shot\n(.png)</string>
+
+    <string name="none_name">none</string>
+    <string name="select_name">select</string>
+
+    <!--recorder-->
+    <string name="label_permissions">Please enable Microphone and Storage permissions.</string>
+
+    <string name="fail_name">Fail</string>
+    <string name="pass_name">Pass</string>
+
+    <string name="warning_cal">Calibration Off</string>
+    <string name="warning_message">Warning Message</string>
+
+    <string name="low_battery_message">Low battery power</string>
+    <string name="battery_level_10_message">Battery Level : 10%</string>
+    <string name="battery_level_5_message">Battery Level : 5%</string>
+    <string name="please_charge_message">Please charge the battery</string>
+
+    <string name="fw_update_title">FW File List</string>
+
+
+    <string name="calibration_step1">Step 1 of 3 :\n
+\n
+Connect OPEN to the RF Output Port or test port cable\n
+\n
+Press Measure button to complete this step.\n
+\n
+Calibration Steps :\n
+   Step 1 : OPEN\n
+   Step 2 : SHORT\n
+   Step 3 : LOAD\n</string>
+
+
+    <string name="calibration_step2">Step 2 of 3 :\n
+\n
+Connect SHORT to the RF Output Port or test port cable\n
+\n
+Press Measure button to complete this step.\n
+\n
+Calibration Steps :\n
+   Step 1 : OPEN\n
+   Step 2 : SHORT\n
+   Step 3 : LOAD\n</string>
+
+
+    <string name="calibration_step3">Step 3 of 3 :\n
+\n
+Connect LOAD to the RF Output Port or test port cable\n
+\n
+Press Measure button to complete this step.\n
+\n
+Calibration Steps :\n
+   Step 1 : OPEN\n
+   Step 2 : SHORT\n
+   Step 3 : LOAD\n</string>
+
+    <string name="span_name">Span</string>
+    <string name="bw_name">BW</string>
+    <string name="peak_name">Peak</string>
+    <string name="trace_name">Trace</string>
+    <string name="sweep_time_name">Sweep</string>
+    <string name="meas_setup_name">Meas</string>
+    <string name="mode_name">Mode</string>
+    <string name="meas_name">Meas</string>
+    <string name="full_span_name">Full Span</string>
+    <string name="zero_span_name">Zero Span</string>
+    <string name="last_span_name">Last Span</string>
+    <string name="rbw_name">RBW</string>
+    <string name="vbw_name">VBW</string>
+    <string name="ref_level_name">Ref.Level</string>
+    <string name="attenuator_name">Attenuator</string>
+    <string name="clear_write_name">Clear Write</string>
+    <string name="average_name">Average</string>
+    <string name="max_hold_name">Max Hold</string>
+    <string name="min_hold_name">Min Hold</string>
+    <string name="update_name">Update</string>
+    <string name="view_name">View</string>
+    <string name="blank_name">Blank</string>
+    <string name="normal_name">Normal</string>
+    <string name="negative_name">Negative</string>
+    <string name="sample_name">Sample</string>
+    <string name="fixed_name">Fixed</string>
+    <string name="off_name">Off</string>
+    <string name="more_name">More</string>
+    <string name="delta_name">Delta</string>
+    <string name="select_marker_name">Select Marker</string>
+    <string name="all_marker_off_name">All Marker Off</string>
+    <string name="marker_table_name">Marker Table</string>
+    <string name="maker_trace_name">Marker Trace</string>
+    <string name="relative_to_name">Relative To</string>
+    <string name="rms_name">RMS</string>
+    <string name="dbm_unit">dBm</string>
+    <string name="ref_label">Ref :</string>
+    <string name="atten_label">Atten :</string>
+    <string name="offset_label">Offset :</string>
+    <string name="avg_hold_num_title">Avg/Hold Num</string>
+    <string name="meas_setup">Meas Setup</string>
+    <string name="integ_bw">Integ. BW</string>
+    <string name="channel_power">Channel Power : </string>
+    <string name="power_spectral_density">Power Spectral Density : </string>
+    <string name="occupied_bandwidth">Occupied Bandwidth : </string>
+    <string name="total_power">Total Power : </string>
+    <string name="xdb_val">x dB : </string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="run">Run</string>
+    <string name="hold">Hold</string>
+    <string name="continuous">Cont</string>
+    <string name="single">Single</string>
+    <string name="flex">Flex</string>
+    <string name="standard">Std</string>
+    <string name="dtf_setup">DTF Setup</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="auto_scale">Auto scale</string>
+    <string name="full_scale">Full scale</string>
+    <string name="wrong_type">Wrong type</string>
+    <string name="cable_list">Cable List</string>
+    <string name="prop_velocity">Prop Velocity</string>
+    <string name="windowing">Windowing</string>
+    <string name="rectangular">Rectangular</string>
+    <string name="normal_side_lobe">Nominal Side Lobe</string>
+    <string name="low_side_lobe">Low Side Lobe</string>
+    <string name="minimum_side_lobe">Minimum Side Lobe</string>
+    <string name="sa_mode">SA Mode</string>
+    <string name="marker_setup">Setup</string>
+    <string name="marker_search">Search</string>
+    <string name="limit_alram">Alarm</string>
+    <string name="limit_pass_fail">Pass/Fail</string>
+    <string name="limit_preset">Preset Limit</string>
+    <string name="limit_type">Limit Type</string>
+    <string name="limit_line">Limit Line</string>
+    <string name="wait_cal">Please wait... Calibration is running...</string>
+    <string name="profile">Profile</string>
+    <string name="constellation_scale">Constellation Scale</string>
+    <string name="guide_line">Guide Line</string>
+    <string name="beam_pwr_ref">Beam Pwr Ref. Lvl</string>
+    <string name="atten_mode">Attenuator Mode</string>
+    <string name="preamp">Preamp</string>
+    <string name="offset">Offset</string>
+    <string name="ssb_only">SSB Only</string>
+    <string name="ssb_info">SSB Info</string>
+    <string name="ssb_locationn">SSB Location</string>
+    <string name="config">Config</string>
+    <string name="duplex">Duplex</string>
+    <string name="scs">SCS</string>
+    <string name="rb_offset">RB Offset</string>
+    <string name="k_ssb">K_SSB</string>
+    <string name="gscn">GSCN</string>
+    <string name="no_data_mark">--.--</string>
+    <string name="no_type_mark">--</string>
+    <string name="standard_title">Standard</string>
+    <string name="none">None</string>
+    <string name="wcdma">WCDMA</string>
+    <string name="lte">LTE</string>
+    <string name="nr_5g_title">5G NR</string>
+    <string name="carrier_setup">Carrier Setup</string>
+    <string name="offset_setup">Offset Setup</string>
+    <string name="carriers">Carriers</string>
+    <string name="ref_carrier">Ref. Carrier</string>
+    <string name="carrier_spacing">Carrier Spacing</string>
+    <string name="number_of_offset">Number Of Offset</string>
+    <string name="select_offset">Select Offset</string>
+    <string name="offset_spacing">Offset Spacing</string>
+    <string name="offset_side">Offset Side</string>
+    <string name="fail_source">Fail Source</string>
+    <string name="abs_limit">Abs Limit</string>
+    <string name="rel_limit">Rel Limit</string>
+    <string name="absolute">Absolute</string>
+    <string name="relative">Relative</string>
+    <string name="all">All</string>
+    <string name="obw_power">OBW Power</string>
+    <string name="meas_type">Meas Type</string>
+    <string name="edit_mask">Edit Mask</string>
+    <string name="mask_index">Mask Index</string>
+    <string name="start_freq">Start Freq</string>
+    <string name="stop_freq">Stop Freq</string>
+    <string name="mask_side">Mask Side</string>
+    <string name="ref_channel">Ref. Channel</string>
+    <string name="channel_detector">Channel Detector</string>
+    <string name="offset_detector">Offset Detector</string>
+    <string name="psd_name">PSD</string>
+    <string name="total_power_name">Total Power</string>
+    <string name="gate">Gate</string>
+    <string name="gate_view">Gate View</string>
+    <string name="gate_delay">Gate Delay</string>
+    <string name="gate_source">Gate Source</string>
+    <string name="gps">GPS</string>
+    <string name="rf_burst">RF Burst</string>
+    <string name="internal">Internal</string>
+    <string name="ssb">SSB</string>
+    <string name="ramp_up_start_lev">Ramp Up\nStart Level</string>
+    <string name="ramp_up_stop_lev">Ramp Up\nStop Level</string>
+    <string name="ramp_down_start_lev">Ramp Down\nStart Level</string>
+    <string name="ramp_down_stop_lev">Ramp Down\nStop Level</string>
+    <string name="sem_density_title">Density :</string>
+    <string name="sem_start_freq">Start Freq</string>
+    <string name="sem_stop_freq">Stop Freq</string>
+    <string name="sem_integ_bw">Integ. BW</string>
+    <string name="sem_lower">Lower</string>
+    <string name="sem_pass">Pass</string>
+    <string name="sem_pk_pwr_title">Pk-Pwr(dBm)</string>
+    <string name="sem_limit_title">Limit(dB)</string>
+    <string name="sem_freq_mhz">Freq(MHz)</string>
+    <string name="sem_upper">Upper</string>
+    <string name="abs_start_limit">Abs Start Limit</string>
+    <string name="abs_stop_limit">Abs Stop Limit</string>
+    <string name="rel_start_limit">Rel Start Limit</string>
+    <string name="rel_stop_limit">Rel Stop Limit</string>
+    <string name="abs_or_rel">Abs OR Rel</string>
+    <string name="pass_result">Pass</string>
+    <string name="fail_result">Fail</string>
+
+    <string name="transmit_off_power">Off Power</string>
+    <string name="ramp_up_time">Ramp Up Time</string>
+    <string name="ramp_down_time">Ramp Down Time</string>
+    <string name="rf_envelope">RF Envelope</string>
+    <string name="transmit_on_off_power">Transmit On/Off</string>
+    <string name="gate_length">Gate Length</string>
+    <string name="_5g_nr">5G NR</string>
+    <string name="warning_temperature1">The temperature of the equipment has almost reached its limit.</string>
+    <string name="warning_temperature2">The temperature of the equipment has exceeded limit.</string>
+    <string name="please_cool_the_equip">Please cool the equipment down</string>
+    <string name="will_turn_off_power">We will turn off the power to protect the equipment</string>
+    <string name="warning">Warning</string>
+    <string name="warning_cal_temp">The calibration temperature has been exceeded</string>
+    <string name="tae_title">TAE</string>
+    <string name="tae_meas">TAE Meas</string>
+    <string name="num_of_tx_ant">Num Of Tx Ant(Intra-TAE)</string>
+    <string name="select_tx_ant_idx">Select Tx Ant Idx</string>
+    <string name="set_up">Setup</string>
+    <string name="i_q_constellation">I/Q Constellation</string>
+    <string name="time_information">Time Information</string>
+    <string name="time_alignment_error">Time Alignment Error</string>
+    <string name="ns_unit_default">--.-- ns</string>
+    <string name="timing_offset">Timing Offset</string>
+    <string name="thrd">THRD</string>
+    <string name="antenna_information">Antenna Information</string>
+    <string name="pass_short">P</string>
+    <string name="cell_information">Cell Information</string>
+    <string name="power_information">Power Information</string>
+    <string name="signal_quality">Signal Quality</string>
+    <string name="ppm">ppm</string>
+    <string name="threshold_0_05ppm_12_hz">Threshold [0.05ppm+12 Hz]</string>
+    <string name="hz">Hz</string>
+    <string name="pass_mark">P</string>
+    <string name="channel">Channel</string>
+    <string name="evm">EVM(%)</string>
+    <string name="pwr_dbm">PWR(dBm)</string>
+    <string name="mod">Mod</string>
+    <string name="rb">#RB</string>
+    <string name="pss">PSS</string>
+    <string name="none_data">--.--</string>
+    <string name="none_string_data">--</string>
+    <string name="sss">SSS</string>
+    <string name="pbch">PBCH</string>
+    <string name="pcfich">PCFICH</string>
+    <string name="phich">PHICH</string>
+    <string name="pdcch">PDCCH</string>
+    <string name="crs">CRS</string>
+    <string name="pdsch">PDSCH</string>
+    <string name="mod_accuracy">Mod. Accuracy</string>
+    <string name="trigger">Trigger</string>
+    <string name="trigger_source">Trigger Source</string>
+    <string name="freq_offset">Freq. Offset</string>
+    <string name="min_evm">Min EVM</string>
+    <string name="tae">TAE</string>
+    <string name="start_inter_tae_msg">Inter-TAE 측정이 시작되었습니다.</string>
+    <string name="intra_tae">Intra-TAE</string>
+    <string name="inter_tae">Inter-TAE</string>
+    <string name="threshold">Threshold</string>
+    <string name="exp_max_tx_power">Exp Max Tx Pwr :</string>
+
+    <string name="wait_sec">Please try again in a few seconds.</string>
+    <string name="connected">Connected.</string>
+    <string name="wifi_not_found">WiFi not found.</string>
+    <string name="unable_to_find_device">Unable to find the device that was connected.</string>
+    <string name="unable_to_connect_wifi">Unable to connect to WiFi.</string>
+    <string name="check_wifi_connection">Please check the WiFi connection.</string>
+    <string name="ovf">OVF</string>
+    <string name="gate_fw_status">GATE</string>
+    <string name="pre_fw_status">PRE</string>
+    <string name="ext_fw_status">EXT</string>
+    <string name="trig">TRIG</string>
+    <string name="sync">SYNC</string>
+    <string name="not_available_trace">Not Available Trace</string>
+    <string name="band_setup">Band Setup</string>
+    <string name="freq_range_table">Freq Range Table</string>
+    <string name="low_freq">Low Freq</string>
+    <string name="high_freq">High Freq</string>
+    <string name="rbw_title">RBW</string>
+    <string name="peak_freq">Peak Freq</string>
+    <string name="freq_range">Freq Range</string>
+    <string name="spurious_power">Power</string>
+    <string name="spurious_limit">△ Limit</string>
+    <string name="spurious_result">Result</string>
+    <string name="uplink"> : Uplink</string>
+    <string name="downlink"> : Downlink</string>
+    <string name="ext_1pps">Ext. 1pps</string>
+    <string name="frame_time">Frame Time</string>
+    <string name="ns_unit">ns</string>
+    <string name="us_unit">us</string>
+    <string name="ms_unit">ms</string>
+    <string name="s_unit">s</string>
+    <string name="khz_unit">KHz</string>
+    <string name="mhz_unit">MHz</string>
+    <string name="ghz_unit">GHz</string>
+    <string name="detected_spur_table_index">Index</string>
+    <string name="detected_spur_table_time">Time</string>
+    <string name="detected_spur_table_type">Type</string>
+    <string name="detected_spur_table_power">Power</string>
+    <string name="detected_spur_table">Detected Spur Table</string>
+    <string name="uplink_band">Uplink Band</string>
+    <string name="target_freq">Target Freq</string>
+
+    <!-- 5G NR Scan -->
+    <string name="nr_5g_scan">5G NR Scan</string>
+    <string name="nrs_index">Index</string>
+    <string name="nrs_name">Name</string>
+    <string name="nrs_freq">Freq\n[MHz]</string>
+    <string name="nrs_ssb_freq">SSB Freq\n[MHz]</string>
+    <string name="nrs_pci">PCI</string>
+    <string name="nrs_ssb_index">SSB Index</string>
+    <string name="nrs_ss_rsrp">SS-RSRP\n[dBm]</string>
+    <string name="nrs_ss_rsrq">SS-RSRQ\n[dB]</string>
+    <string name="nrs_ss_sinr">SS-SINR\n[dB]</string>
+    <string name="nrs_timing_offset">Timing Offset\n[us]</string>
+    <string name="nrs_tae">TAE\n[us]</string>
+    <string name="nrs_not_value">--.--</string>
+
+    <string name="select_carrier">Select Carrier</string>
+
+    <string name="close">Close</string>
+    <string name="gps_info">GPS Information</string>
+    <string name="gps_date">"Date : "</string>
+    <string name="gps_time">"Time : "</string>
+    <string name="gps_lat">"Lat : "</string>
+    <string name="gps_lon">"Lon : "</string>
+    <string name="gps_alt">"Alt : "</string>
+    <string name="gps_status">GPS Status</string>
+    <string name="gps_ant_status">Ant Status</string>
+    <string name="gps_cnr">CNR</string>
+
+</resources>

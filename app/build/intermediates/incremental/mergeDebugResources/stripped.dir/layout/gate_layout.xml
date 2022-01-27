@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+                                                        
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/gate_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/gateLineChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.85"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/gateLinkChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.04"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gateLineChart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gateLinkChart">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvGateXOffset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:text="0 ms"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:id="@+id/layerLinkChartLabel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivDownlinkIcon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/blue" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvDownlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/downlink"
+                    android:textColor="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/ivUplinkIcon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/red" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvUplink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/uplink"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvTimeSpanVal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:text="10 ms"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <LinearLayout
+                android:id="@+id/linKeypadParent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:background="@drawable/db_keypad_border"
+                android:layout_weight="0.4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="0.2">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:text=""
+                        android:enabled="false"
+                        android:textSize="20dp"
+                        autofit:minTextSize="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linKeypad"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorDialogTitle"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@null"
+                        android:weightSum="1"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="3"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@null"
+                        android:weightSum="1"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="4"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="6"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@null"
+                        android:weightSum="1"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="7"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="8"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="9"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@null"
+                        android:weightSum="1"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPlusMinus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="+/-"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvValue0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="0"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvDot"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="."/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@null"
+                        android:weightSum="1"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivBackspace"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:src="@drawable/backspace_icon"
+                            android:scaleType="centerInside"
+                            android:textColor="@color/colorBlack"
+                            android:text="1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvdB"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="dB"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvEnter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.33"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:background="@drawable/db_keypad_button"
+                            android:textColor="@color/colorBlack"
+                            android:text="Enter"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"/>
+
+    </LinearLayout>
+
+</layout>

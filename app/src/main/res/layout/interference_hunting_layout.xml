@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvDetectedTableTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:text="@string/detected_spur_table"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/linTableTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_border"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toBottomOf="@id/tvDetectedTableTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/scTable">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvIndexTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_border"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="@string/detected_spur_table_index"
+                    android:layout_weight="0.1"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTimeTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_border"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="@string/detected_spur_table_time"
+                    android:layout_weight="0.5"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTypeTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_border"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="@string/detected_spur_table_type"
+                    android:layout_weight="0.2"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvPowerTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_border"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="@string/detected_spur_table_power"
+                    android:layout_weight="0.2"/>
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scTable"
+                android:layout_width="match_parent"
+                android:background="@drawable/white_border"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:scrollbarStyle="outsideOverlay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linTableTitle">
+
+                <LinearLayout
+                    android:background="@drawable/white_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/linTableList0"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:text=""
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linTableList1"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList4"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList5"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList6"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList7"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList8"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower8"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList9"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower9"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList10"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList11"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList12"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower12"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList13"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower13"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList14"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower14"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList15"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower15"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList16"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex16"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime16"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType16"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower16"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList17"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower17"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList18"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex18"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime18"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType18"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower18"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linTableList19"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/white_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvIndex19"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvTime19"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.5"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvType19"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPower19"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="center"
+                            android:layout_weight="0.2"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

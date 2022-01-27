@@ -1,0 +1,906 @@
+[
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_db_keypad_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\db_keypad_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_preset_select_button_background.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\preset_select_button_background.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recall_list_view_unselected.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\recall_list_view_unselected.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_normal_marker.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_normal_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_left_arrow.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_left_arrow.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_warning_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\warning_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_top_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_top_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_fw_update_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\fw_update_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_top_menu_unselected_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\top_menu_unselected_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_app_icon2.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\app_icon2.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_battery_sm_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\battery_sm_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_battery_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\battery_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_swept_sa.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\swept_sa.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gps_hold_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\gps_hold_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_pre_on.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_pre_on.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_battery_warning_title_blue_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\battery_warning_title_blue_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_sem_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\sem_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_obw_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\obw_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\color_s_text_green.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\color\\s_text_green.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_right_menu_unseleted_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\right_menu_unseleted_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_battery_warning_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\battery_warning_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_update_dialog_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\update_dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marker_left_top_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\marker_left_top_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_inverted_triangle.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\inverted_triangle.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_image_view.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\image_view.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_device1.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-v24\\device1.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_line_chart_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\line_chart_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gps_location_enabled_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\gps_location_enabled_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_menu_on_t3.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_menu_on_t3.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_ch_power_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\ch_power_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_aclr_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\aclr_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_marker.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_white_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\white_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_loading_tracking_holdover.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_tracking_holdover.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_battery_form.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\battery_form.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_network_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\select_network_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_pact.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\activity_splash_pact.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_avg_hold_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\avg_hold_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marker_table_unselected.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\marker_table_unselected.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pass_message_box.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\pass_message_box.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_preset_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\preset_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_splash_pact.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\splash_pact.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_menu_on_t2.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_menu_on_t2.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_top_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_top_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_warning.PNG.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\warning.PNG"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_update_file_list_item.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\update_file_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_right_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_right_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_save_bottom_button_selector.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\save_bottom_button_selector.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_trig_on.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_trig_on.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_lte_fdd_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\lte_fdd_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recall_list_title_box.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\recall_list_title_box.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_loading_default.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_default.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_combo.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\activity_splash_combo.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_sync_on.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_sync_on.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_mead_on2.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_mead_on2.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_occ_bw_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\occ_bw_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_t2.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_t2.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_wifi_card_view.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\wifi_card_view.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_save_right_button_selector.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\save_right_button_selector.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_fixed_marker.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_fixed_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_distance_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\distance_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_select_marker.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_select_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_quick_munu.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_quick_munu.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_outside_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\outside_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_loading_msg_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_msg_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mode_boundary.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\mode_boundary.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_preset_selector.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\preset_selector.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_selected_marker_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\selected_marker_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_bottom.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_bottom.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\color_s_text_yellow.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\color\\s_text_yellow.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_white_square.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\white_square.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recall_list_title_boundary.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\recall_list_title_boundary.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_sweep_time_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\sweep_time_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_auto_scale_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\auto_scale_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tae_c1.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\tae_c1.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_menu_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_menu_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_bottom_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_bottom_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_recycler_view.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\item_recycler_view.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_interference_hunting_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\interference_hunting_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_app_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_spurious_emission_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\spurious_emission_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_ext_on.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_ext_on.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_inside_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\inside_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marker_table_selected.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\marker_table_selected.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_menu_on_t4.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_menu_on_t4.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_db_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\db_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_right_arrow.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_right_arrow.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_recall_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\file_recall_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_t3.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_t3.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_wifi_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\wifi_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bottom_menu_selected_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\bottom_menu_selected_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_battery_warning_title_red_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\battery_warning_title_red_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_freq_set_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\freq_set_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rec_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\rec_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_aclr_layout_org.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\aclr_layout_org.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_left_arrow.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\left_arrow.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_screenshot_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\screenshot_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_right_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_right_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_cable_loss_input_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\cable_loss_input_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_continuous_marker.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_continuous_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_sem_marker.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_sem_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_hotspot_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\hotspot_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_menu_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_menu_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_top_menu_selected_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\top_menu_selected_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bottom_menu_unselected_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\bottom_menu_unselected_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_left_battery.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\left_battery.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_loading_progress_bar.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_transmit_on_off_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\transmit_on_off_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_freq_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\freq_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_icon_battery.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_icon_battery.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_limit_msg_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\limit_msg_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_battery_warning_bottom_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\battery_warning_bottom_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_background.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_background.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_default_input_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\default_input_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\raw_beep_effect.mp3.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\raw\\beep_effect.mp3"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_cable_prop_velocity_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\cable_prop_velocity_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_right_arrow.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\right_arrow.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_file_save_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\file_save_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loading_window.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\loading_window.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_cable_list_item.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\cable_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_ovf_on.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_ovf_on.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_macro_window.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\macro_window.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_charge_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\charge_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cable_unseleted_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\cable_unseleted_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_macro_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\macro_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_meas_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_meas_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_demodulation_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\demodulation_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_loading_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\layout_loading_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_top_menu_unselected_left_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\top_menu_unselected_left_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_bottom_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_bottom_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tae_c4.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\tae_c4.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_marker_table_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\marker_table_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_save_file_list_item.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\save_file_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cali_step3.PNG.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\cali_step3.PNG"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_change_ip_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\change_ip_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_right_menu_seleted_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\right_menu_seleted_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_macro_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\macro_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\round_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_gate_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\gate_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_t4.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_t4.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tae_c2.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\tae_c2.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_atten_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\atten_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lte_antenna_green.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\lte_antenna_green.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_red_square.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\red_square.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_integer_input_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\integer_input_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_macro_dialog_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\macro_dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_item.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_backspace_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\backspace_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_file_list_icon.PNG.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\file_list_icon.PNG"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_top.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_top.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cali_step2.PNG.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\cali_step2.PNG"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_right_menu_layout_selector.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\right_menu_layout_selector.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_continuous_marker_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\continuous_marker_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_db_keypad_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\db_keypad_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_gps_info_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\gps_info_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_battery_lg_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\battery_lg_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_recall_msg_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\recall_msg_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_back.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_back.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cali_step1.PNG.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\cali_step1.PNG"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_marker2.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\marker2.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fw_status_gate_on.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fw_status_gate_on.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gps_location_disabled_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\gps_location_disabled_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_intra_tae_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\intra_tae_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cable_title.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\cable_title.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fail_message_box.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\fail_message_box.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_screenshot_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\screenshot_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_green_square.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\green_square.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_menu_unseleted_back_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\menu_unseleted_back_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\color_s_text_black.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\color\\s_text_black.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_inter_tae_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\inter_tae_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lte_antenna_white.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\lte_antenna_white.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_t1.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\s_btn_t1.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\color_right_menu_text_selector.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\color\\right_menu_text_selector.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_mead_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_mead_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_battery_charging.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\ic_battery_charging.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_xdb_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\xdb_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\color_s_text_top.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\color\\s_text_top.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_wifi_none_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\wifi_none_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_demodulation_title_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\demodulation_title_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_blue_square.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\blue_square.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_hotspot_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\hotspot_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_fixed_marker.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\fixed_marker.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_auto_measuring_layout.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\auto_measuring_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_system_version_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\system_version_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_menu_on_t1.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_menu_on_t1.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_back_on.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_back_on.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_5g_nr_scan.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\layout_5g_nr_scan.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reload_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\reload_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_flight_mode.jpg.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\flight_mode.jpg"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recall_list_view_selected.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\recall_list_view_selected.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_preset_unselect_button_background.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\preset_unselect_button_background.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_excel_file_list.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\excel_file_list.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_battery_warning_middle_border.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\battery_warning_middle_border.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_marker_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\marker_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_excel_file_list_item.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\excel_file_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_device2.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-v24\\device2.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_star.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\star.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_auto_icon.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\auto_icon.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tae_c3.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\tae_c3.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_wifi_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\wifi_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recall_list_view_box.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\recall_list_view_box.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cable_seleted_button.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable\\cable_seleted_button.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_splash_combo.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\splash_combo.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_calibration_dialog.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\calibration_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_back_off.png.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\drawable-hdpi\\btn_back_off.png"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\res\\merged\\debug\\layout_freq_keypad.xml.flat",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\freq_keypad.xml"
+    }
+]

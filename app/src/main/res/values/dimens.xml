@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_size">20px</dimen>
+    <dimen name="menu_size">17px</dimen>
+    <dimen name="content_size">15px</dimen>
+    <dimen name="submenu_size">12px</dimen>
+
+    <dimen name="demodulation_title">11dp</dimen>
+    <dimen name="demodulation_content">10dp</dimen>
+
+    <dimen name="lte_content_size">8sp</dimen>
+    <dimen name="lte_sub_title_size">9sp</dimen>
+    <dimen name="lte_title">10sp</dimen>
+
+    <dimen name="list_line">1px</dimen>
+
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="big_text_size">16sp</dimen>
+
+</resources>

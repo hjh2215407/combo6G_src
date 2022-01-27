@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:weightSum="1"
+        android:orientation="vertical" android:tag="layout/wifi_dialog_0">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:layout_weight="0.4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDialogTitle"
+                    android:layout_weight="0.12">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:text="@string/wifi_dialog_title"
+                        autofit:minTextSize="2dp"/>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/accessPointRecyclerView"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorDialogContent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.73"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDialogTitle"
+                    android:weightSum="1"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvApply"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/apply_name"/>
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/cancel_name"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"/>
+
+    </LinearLayout>
+
+         

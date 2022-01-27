@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/recall_list_view_unselected"
+            android:tag="none"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.1"
+                android:scaleType="centerInside"
+                android:src="@drawable/file_list_icon"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:text=""
+                app:minTextSize="4dp"/>
+
+            <View
+                android:id="@+id/tvType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvModified"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="13dp"
+                android:textColor="@color/colorBlack"
+                android:text=""
+                app:minTextSize="4dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</layout>

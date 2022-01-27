@@ -1,0 +1,266 @@
+[
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\xdb_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\xdb_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\macro_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\macro_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_continuous_marker.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_continuous_marker.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cable_list_item.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\cable_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\intra_tae_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\intra_tae_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\interference_hunting_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\interference_hunting_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sweep_time_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\sweep_time_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\integer_input_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\integer_input_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_5g_nr_scan.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\layout_5g_nr_scan.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\recall_msg_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\recall_msg_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_combo.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\activity_splash_combo.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\swept_sa.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\swept_sa.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\avg_hold_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\avg_hold_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\update_dialog_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\update_dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\screenshot_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\screenshot_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\excel_file_list_item.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\excel_file_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cable_loss_input_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\cable_loss_input_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\marker_table_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\marker_table_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\update_file_list_item.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\update_file_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_loading_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\layout_loading_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\loading_default.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_default.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\wifi_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\wifi_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_pact.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\activity_splash_pact.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\battery_warning_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\battery_warning_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\file_save_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\file_save_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\spinner_item.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\spinner_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\loading_tracking_holdover.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_tracking_holdover.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\gps_info_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\gps_info_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\save_file_list_item.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\save_file_list_item.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\obw_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\obw_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\calibration_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\calibration_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\aclr_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\aclr_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\select_network_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\select_network_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fw_update_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\fw_update_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\freq_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\freq_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\system_version_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\system_version_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\occ_bw_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\occ_bw_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\atten_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\atten_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\wifi_card_view.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\wifi_card_view.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_right_arrow.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_right_arrow.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\auto_measuring_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\auto_measuring_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\change_ip_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\change_ip_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\excel_file_list.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\excel_file_list.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\aclr_layout_org.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\aclr_layout_org.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cable_prop_velocity_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\cable_prop_velocity_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\distance_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\distance_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\ch_power_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\ch_power_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\warning_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\warning_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\lte_fdd_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\lte_fdd_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\inter_tae_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\inter_tae_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\gate_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\gate_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\demodulation_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\demodulation_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\file_recall_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\file_recall_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\db_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\db_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\transmit_on_off_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\transmit_on_off_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_left_arrow.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\custom_left_arrow.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\freq_set_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\freq_set_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\default_input_keypad.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\default_input_keypad.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\limit_msg_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\limit_msg_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\macro_dialog_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\macro_dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\line_chart_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\line_chart_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\preset_dialog.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\preset_dialog.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\image_view.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\image_view.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\loading_msg_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\loading_msg_layout.xml"
+    },
+    {
+        "merged": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sem_layout.xml",
+        "source": "C:\\dev\\nuclear_power_plant\\combo6G_src\\app\\src\\main\\res\\layout\\sem_layout.xml"
+    }
+]

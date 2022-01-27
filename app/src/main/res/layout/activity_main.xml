@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_combo"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context=".Activity.MainActivity">
+
+        <!--Top Menu-->
+        <LinearLayout
+            android:id="@+id/layoutTopMenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:background="@color/bg"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!--LOGO-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvPactLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.55"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/app_logo"
+                    android:textColor="@color/app_title"
+                    android:textSize="8dp"
+                    android:textStyle="italic|bold" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTimeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:singleLine="true"
+                    android:textColor="@color/timeText"
+                    android:textSize="8dp" />
+
+            </LinearLayout>
+
+            <!--TopMenuCenter-->
+            <LinearLayout
+                android:id="@+id/linTopMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.52"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <!--<me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvModAccuracy"
+                    style="@style/TopMenuButton"
+                    android:text="@string/mod5g_name" />-->
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSa"
+                    style="@style/TopMenuButton"
+                    android:text="@string/sa_name" />
+
+                <!--<me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvVswr"
+                    style="@style/TopMenuButton"
+                    android:text="@string/vswr_name" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvDtf"
+                    style="@style/TopMenuButton"
+                    android:text="@string/dtf_name" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvCableLoss"
+                    style="@style/TopMenuButton"
+                    android:text="@string/cableloss_name" />-->
+
+            </LinearLayout>
+
+            <!--Icon-->
+            <LinearLayout
+                android:id="@+id/linTopIconMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.35"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvWifiName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/norText"
+                    app:minTextSize="5dp" />
+
+                <ImageView
+                    android:id="@+id/ivWifiImage"
+                    style="@style/TopIcon"
+                    android:src="@drawable/wifi_none_icon" />
+
+                <ImageView
+                    android:id="@+id/ivMacroImage"
+                    style="@style/TopIcon"
+                    android:src="@drawable/macro_icon"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_preset"
+                    style="@style/TopIcon"
+                    android:src="@drawable/reload_icon" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvAutoScale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.15"
+                    android:background="@drawable/auto_scale_border"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Auto"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivAutoScale"
+                    style="@style/TopIcon"
+                    android:src="@drawable/auto_icon" />
+
+                <ImageView
+                    android:id="@+id/ivGPS"
+                    style="@style/TopIcon"
+                    android:src="@drawable/gps_location_disabled_icon" />
+
+                <ImageView
+                    android:id="@+id/ivScreenshot"
+                    style="@style/TopIcon"
+                    android:src="@drawable/screenshot_icon" />
+
+                <LinearLayout
+                    android:id="@+id/linBatteryBg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/s_icon_battery"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvBattery"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/norText"
+                        android:textSize="1dp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.65"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:background="@null"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:id="@+id/linBattery"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="100"
+                                        android:background="#00ff00"
+                                        android:orientation="horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivChargeIcon"
+                    style="@style/TopIcon"
+                    android:layout_weight="0.03"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/charge_icon"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.95">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.95">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <FrameLayout
+                                    android:id="@+id/linMainTopSub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.07"
+                                    android:background="@color/bg2"
+                                    android:visibility="invisible">
+
+                                    <!--MarkerView-->
+                                    <LinearLayout
+                                        android:id="@+id/linTopSubBtn"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <LinearLayout
+                                            android:id="@+id/linMarkerBox"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.30"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMarker1"
+                                                style="@style/MarkerButton"
+                                                android:text="@string/marker1_name"
+                                                app:minTextSize="8sp" />
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMarker2"
+                                                style="@style/MarkerButton"
+                                                android:text="@string/marker2_name"
+                                                app:minTextSize="8sp" />
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMarker3"
+                                                style="@style/MarkerButton"
+                                                android:text="@string/marker3_name"
+                                                app:minTextSize="8sp" />
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMarker4"
+                                                style="@style/MarkerButton"
+                                                android:text="@string/marker4_name"
+                                                app:minTextSize="8sp" />
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMarker5"
+                                                style="@style/MarkerButton"
+                                                android:text="@string/marker5_name"
+                                                app:minTextSize="8sp" />
+
+                                        </LinearLayout>
+
+                                        <!--                                <View-->
+                                        <!--                                    android:layout_width="0dp"-->
+                                        <!--                                    android:layout_height="match_parent"-->
+                                        <!--                                    android:layout_weight="0.05" />-->
+
+                                        <LinearLayout
+                                            android:id="@+id/linTraceBox"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.25"
+                                            android:weightSum="1">
+
+                                            <LinearLayout
+                                                android:id="@+id/linTrace1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="2dp"
+                                                android:layout_weight="0.25"
+                                                android:background="@drawable/s_btn_t1"
+                                                android:gravity="center"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvTrace1"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.6"
+                                                    android:gravity="center"
+                                                    android:text="T1"
+                                                    android:textColor="@color/s_text_black"
+                                                    android:textStyle="bold"
+                                                    app:minTextSize="8sp" />
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.25"
+                                                    android:orientation="vertical"
+                                                    android:weightSum="1">
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceMode1"
+                                                        style="@style/MainTraceW" />
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceDetector1"
+                                                        style="@style/MainTraceN" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/linTrace2"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="2dp"
+                                                android:layout_weight="0.25"
+                                                android:background="@drawable/s_btn_t2"
+                                                android:gravity="center"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvTrace2"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.6"
+                                                    android:gravity="center"
+                                                    android:text="T2"
+                                                    android:textColor="@color/s_text_black"
+                                                    android:textStyle="bold"
+                                                    app:minTextSize="8sp" />
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.25"
+                                                    android:orientation="vertical"
+                                                    android:weightSum="1">
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceMode2"
+                                                        style="@style/MainTraceW" />
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceDetector2"
+                                                        style="@style/MainTraceN" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/linTrace3"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="2dp"
+                                                android:layout_weight="0.25"
+                                                android:background="@drawable/s_btn_t3"
+                                                android:gravity="center"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvTrace3"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.6"
+                                                    android:gravity="center"
+                                                    android:text="T3"
+                                                    android:textColor="@color/s_text_black"
+                                                    android:textStyle="bold"
+                                                    app:minTextSize="8sp" />
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.25"
+                                                    android:orientation="vertical"
+                                                    android:weightSum="1">
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceMode3"
+                                                        style="@style/MainTraceW" />
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceDetector3"
+                                                        style="@style/MainTraceN" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/linTrace4"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="2dp"
+                                                android:layout_weight="0.25"
+                                                android:background="@drawable/s_btn_t4"
+                                                android:gravity="center"
+                                                android:orientation="horizontal"
+                                                android:weightSum="1">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvTrace4"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="0.6"
+                                                    android:gravity="center"
+                                                    android:text="T4"
+                                                    android:textColor="@color/s_text_black"
+                                                    android:textStyle="bold"
+                                                    app:minTextSize="8sp" />
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="0.25"
+                                                    android:orientation="vertical"
+                                                    android:weightSum="1">
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceMode4"
+                                                        style="@style/MainTraceW" />
+
+                                                    <me.grantland.widget.AutofitTextView
+                                                        android:id="@+id/tvTraceDetector4"
+                                                        style="@style/MainTraceN" />
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/conMarkerInfo"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.17">
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMarkerValLabel"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text=""
+                                                android:textColor="@color/colorWhite"
+                                                android:textStyle="bold" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:weightSum="1">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tv_marker_x"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical"
+                                                    android:text=""
+                                                    android:textColor="@color/colorWhite"
+                                                    android:textStyle="bold" />
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tv_marker_y"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="0.5"
+                                                    android:gravity="center_vertical"
+                                                    android:text=""
+                                                    android:textColor="@color/colorWhite"
+                                                    android:textStyle="bold" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="0.28"
+                                            android:gravity="right"
+                                            android:orientation="horizontal"
+                                            android:weightSum="1">
+
+                                            <FrameLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.3">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvRecallOff"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="3dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_weight="0.3"
+                                                    android:background="@drawable/s_btn_marker"
+                                                    android:gravity="center"
+                                                    android:text="@string/recall_off"
+                                                    android:textColor="@color/s_text_top"
+                                                    android:visibility="invisible"
+                                                    app:minTextSize="8sp" />
+
+                                                <LinearLayout
+                                                    android:id="@+id/linNrFwStatus"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginRight="5dp"
+                                                    android:orientation="vertical"
+                                                    android:visibility="visible"
+                                                    android:weightSum="1">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.5"
+                                                        android:orientation="horizontal"
+                                                        android:weightSum="1">
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvNrOvf"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/ovf"
+                                                                android:textColor="@color/norText" />
+
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvNrExt"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/ext_fw_status"
+                                                                android:textColor="@color/norText" />
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.5"
+                                                        android:orientation="horizontal"
+                                                        android:weightSum="1">
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvNrSync"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/sync"
+                                                                android:textColor="@color/norText" />
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvNrPre"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/pre_fw_status"
+                                                                android:textColor="@color/norText"
+                                                                android:visibility="gone" />
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvNrTrig"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/trig"
+                                                                android:textColor="@color/norText" />
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                            </FrameLayout>
+
+
+                                            <FrameLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.3">
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvSmallVswr"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="3dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:background="@drawable/s_btn_marker"
+                                                    android:gravity="center"
+                                                    android:text="@string/vswr_name"
+                                                    android:textColor="@color/s_text_top"
+                                                    android:textStyle="bold"
+                                                    android:visibility="visible"
+                                                    app:minTextSize="8sp" />
+
+                                                <me.grantland.widget.AutofitTextView
+                                                    android:id="@+id/tvMode"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_margin="3dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:background="@drawable/s_btn_marker"
+                                                    android:gravity="center"
+                                                    android:text="@string/mode_name"
+                                                    android:textColor="@color/s_text_top"
+                                                    android:textStyle="bold"
+                                                    android:visibility="gone"
+                                                    app:minTextSize="8sp" />
+
+                                                <LinearLayout
+                                                    android:id="@+id/linSaFwStatus"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:orientation="vertical"
+                                                    android:visibility="gone"
+                                                    android:weightSum="1">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.5"
+                                                        android:orientation="horizontal"
+                                                        android:weightSum="1">
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvOvf"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/ovf"
+                                                                android:textColor="@color/norText" />
+
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvExt"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/ext_fw_status"
+                                                                android:textColor="@color/norText" />
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="0dp"
+                                                        android:layout_weight="0.5"
+                                                        android:orientation="horizontal"
+                                                        android:weightSum="1">
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvGate"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/gate_fw_status"
+                                                                android:textColor="@color/norText" />
+
+                                                        </LinearLayout>
+
+                                                        <LinearLayout
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_margin="1dp"
+                                                            android:layout_weight="0.5"
+                                                            android:orientation="vertical"
+                                                            android:weightSum="1">
+
+                                                            <me.grantland.widget.AutofitTextView
+                                                                android:id="@+id/tvPre"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/fw_status_background"
+                                                                android:gravity="center"
+                                                                android:text="@string/pre_fw_status"
+                                                                android:textColor="@color/norText" />
+
+
+                                                        </LinearLayout>
+
+                                                    </LinearLayout>
+
+                                                </LinearLayout>
+
+                                            </FrameLayout>
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvMeas"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="3dp"
+                                                android:layout_weight="0.3"
+                                                android:background="@drawable/s_btn_marker"
+                                                android:gravity="center"
+                                                android:singleLine="true"
+                                                android:text="@string/meas_name"
+                                                android:textColor="@color/s_text_top"
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                android:visibility="gone"
+                                                app:minTextSize="1dp"
+                                                app:sizeToFit="true" />
+
+                                            <me.grantland.widget.AutofitTextView
+                                                android:id="@+id/tvSmallReturnLoss"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_margin="3dp"
+                                                android:layout_weight="0.3"
+                                                android:background="@drawable/s_btn_marker"
+                                                android:gravity="center"
+                                                android:singleLine="true"
+                                                android:text="@string/return_loss"
+                                                android:textColor="@color/s_text_top"
+                                                android:textSize="15dp"
+                                                android:textStyle="bold"
+                                                app:minTextSize="1dp"
+                                                app:sizeToFit="true" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <!--Title View-->
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:id="@+id/conTitleParent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone"
+                                        android:weightSum="1">
+
+                                        <me.grantland.widget.AutofitTextView
+                                            android:id="@+id/tvTopCenterTitle"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left"
+                                            android:text=""
+                                            android:textColor="@color/colorWhite"
+                                            android:textStyle="bold"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintHorizontal_bias="0"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintRight_toRightOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </FrameLayout>
+
+
+                                <!--Graph-->
+                                <LinearLayout
+                                    android:id="@+id/linChartParent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.93"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <FrameLayout
+                                        android:id="@+id/frameChartParent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <include
+                                            android:id="@+id/lineChartLayout"
+                                            layout="@layout/line_chart_layout"
+                                            android:visibility="invisible" />
+
+                                        <include
+                                            android:id="@+id/demodulationLayout"
+                                            layout="@layout/demodulation_layout"
+                                            android:visibility="invisible" />
+
+                                        <include
+                                            android:id="@+id/nr_scan_layout"
+                                            layout="@layout/layout_5g_nr_scan"
+                                            android:visibility="invisible" />
+
+                                        <include
+                                            android:id="@+id/lte_fdd_layout"
+                                            layout="@layout/lte_fdd_layout"
+                                            android:visibility="invisible" />
+
+                                        <include
+                                            android:id="@+id/limitMessageLayout"
+                                            layout="@layout/limit_msg_layout"
+                                            android:visibility="invisible" />
+
+                                        <include
+                                            android:id="@+id/recallMessageLayout"
+                                            layout="@layout/recall_msg_layout"
+                                            android:visibility="invisible" />
+
+                                        <include
+                                            android:id="@+id/loadingWindowLayout"
+                                            layout="@layout/loading_msg_layout"
+                                            android:visibility="invisible" />
+
+                                    </FrameLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!--Calibration-->
+                            <LinearLayout
+                                android:id="@+id/linCalibration"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorCalibationBack"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.095"
+                                    android:orientation="vertical">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="OSL Calibration"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.905"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.585"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <me.grantland.widget.AutofitTextView
+                                            android:id="@+id/tvCaliDesc"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="20dp"
+                                            android:gravity="center_vertical"
+                                            android:text="@string/calibration_step1"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="15dp"
+                                            app:minTextSize="2dp" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.415"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/ivCaliStep"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="10dp"
+                                            android:scaleType="centerInside"
+                                            android:src="@drawable/cali_step1" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <!--Left LayoutBase Menu-->
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.05">
+
+                            <LinearLayout
+                                android:id="@+id/linBottomMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                            </LinearLayout>
+
+                            <me.grantland.widget.AutofitTextView
+                                android:id="@+id/tvRecallMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorBackground"
+                                android:gravity="center"
+                                android:text="@string/recall_ok_cancel_message"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linCableList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/cable_title">
+
+                            <me.grantland.widget.AutofitTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/cable_list_name"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                app:sizeToFit="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.61"
+                            android:background="@color/colorWhite"
+                            android:orientation="vertical">
+
+                            <!--<ListView-->
+                            <!--android:id="@+id/lvCableList"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:background="@color/colorWhite"-->
+                            <!--android:layout_height="match_parent" />-->
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvCableList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:background="@color/colorCableListBack"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.35"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableNameTitle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.17"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/cable_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="1dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvPropVelocityTitle"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.17"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/prop_velocity_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="1dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvPropVelocity"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.65"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvFreq1Title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:text="@string/cable_freq_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableFreq1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableFreq2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableFreq3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvLoss1Title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:text="@string/cable_loss_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableLoss1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableLoss2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableLoss3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvFreq2Title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:text="@string/cable_freq_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableFreq4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableFreq5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableFreq6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.25"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvLoss2Title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:text="@string/cable_loss_name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableLoss4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableLoss5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvCableLoss6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="10dp"
+                                        app:minTextSize="5dp"
+                                        app:sizeToFit="true" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/linMainRight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:background="@color/bg2"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    android:weightSum="1">
+
+                    <!--Right Menu-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.948"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/linRightMenuTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.12"
+                            android:orientation="vertical">
+
+                            <me.grantland.widget.AutofitTextView
+                                android:id="@+id/tvRightMenuTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/blueText"
+                                android:textStyle="bold"
+                                app:minTextSize="8sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linRightMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.88"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--Back Button-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.052"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvBack"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/s_btn_back"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/back_name"
+                            android:textColor="@color/s_text_top"
+                            app:minTextSize="8sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linQuickMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:weightSum="1">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MainQuickMenuTextView"
+                        android:background="@null"
+                        android:text="@string/mod5g_name" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvMainQuick5GNR"
+                            style="@style/MainQuickMenuTextView"
+                            android:text="5G NR – Mod. Accuracy" />
+
+                        <TextView
+                            android:id="@+id/tvMainQuick5GNRScan"
+                            style="@style/MainQuickMenuTextView"
+                            android:text="5G NR Scan" />
+
+                        <TextView
+                            android:id="@+id/tvMainQuickLteFdd"
+                            style="@style/MainQuickMenuTextView"
+                            android:text="LTE FDD" />
+
+                    </LinearLayout>
+
+                </LinearLayout>-->
+
+                <TextView
+                    android:id="@+id/tvMainQuickSA"
+                    style="@style/MainQuickMenuTextView"
+                    android:text="@string/sa_name" />
+
+                <!--<TextView
+                    android:id="@+id/tvMainQuickVSWR"
+                    style="@style/MainQuickMenuTextView"
+                    android:text="@string/vswr_name" />
+
+                <TextView
+                    android:id="@+id/tvMainQuickDTF"
+                    style="@style/MainQuickMenuTextView"
+                    android:text="@string/dtf_name" />
+
+                <TextView
+                    android:id="@+id/tvMainQuickCableLoss"
+                    style="@style/MainQuickMenuTextView"
+                    android:text="@string/cableloss_name" />-->
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

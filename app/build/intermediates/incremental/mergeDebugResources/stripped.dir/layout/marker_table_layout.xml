@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:tag="layout/marker_table_layout_0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conLeftMarkerTable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTable1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/marker_table_unselected"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toTopOf="@id/conMarkerTable2"
+                app:layout_constraintHeight_percent="0.33"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gTrace1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gX1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gY1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerTrace1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gTrace1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerX1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gX1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerY1"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gY1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTable2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/marker_table_unselected"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toTopOf="@id/conMarkerTable3"
+                app:layout_constraintHeight_percent="0.33"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conMarkerTable1">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gTrace2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gX2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gY2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerTrace2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gTrace2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerX2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gX2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerY2"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gY2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTable3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/marker_table_unselected"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.33"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conMarkerTable2">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gTrace3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gX3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gY3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerTrace3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gTrace3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerX3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gX3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerY3"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gY3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conRightMarkerTable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/conLeftMarkerTable"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTable4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/marker_table_unselected"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toTopOf="@id/conMarkerTable5"
+                app:layout_constraintHeight_percent="0.33"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gTrace4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gX4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gY4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerTrace4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gTrace4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerX4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gX4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerY4"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gY4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTable5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/marker_table_unselected"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toTopOf="@id/conMarkerTable6"
+                app:layout_constraintHeight_percent="0.33"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conMarkerTable4">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gTrace5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gX5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gY5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerTrace5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gTrace5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerX5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gX5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerY5"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gY5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTable6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/marker_table_unselected"
+                android:paddingLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.33"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/conMarkerTable5">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gTrace6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.16" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gX6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.26" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gY6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerTrace6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gTrace6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerX6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gX6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTableMarkerY6"
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/marker_table_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/gY6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:sizeToFit="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="DabinTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ListTextView">
+        <item name="android:layout_marginEnd">@dimen/list_line</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/list_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/lte_content_size</item>
+        <item name="android:padding">1dp</item>
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="autofit:minTextSize">1sp</item>-->
+<!--        <item name="autofit:maxTextSize">11sp</item>-->
+    </style>
+
+    <style name="TopMenuButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:background">@drawable/s_btn_top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/s_text_top</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TopIcon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+<!--        <item name="android:layout_margin">2dp</item>-->
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:scaleType">fitXY</item>
+<!--        <item name="android:scaleType">centerInside</item>-->
+    </style>
+
+    <style name="MarkerButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:background">@drawable/s_btn_marker</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/s_text_top</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainTraceW">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:text">W</item>
+        <item name="android:textColor">@color/trace_w</item>
+        <item name="android:textSize">1dp</item>
+        <item name="android:paddingTop">2dp</item>
+    </style>
+
+    <style name="MainTraceN">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:text">N</item>
+        <item name="android:textColor">@color/trace_n</item>
+        <item name="android:textSize">1dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="MainQuickMenuTextView">
+        <item name="android:background">@drawable/s_quick_munu</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:text">@string/mod5g_name</item>
+        <item name="android:textColor">@color/selText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="GpsInfoTextView">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/norText</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+    
+</resources>

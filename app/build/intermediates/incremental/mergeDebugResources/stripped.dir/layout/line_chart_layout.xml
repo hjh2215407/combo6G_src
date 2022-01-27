@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" android:tag="layout/line_chart_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvDBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:rotation="-90"
+            android:text="@string/dbm_unit"
+            android:textColor="@color/dbm_label"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/linChartParent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linChartParent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDBM"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/main_line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.92" />
+            <!--                android:layout_weight="0.7" />-->
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvChartInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center_horizontal|top"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!--        Swept Info-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conChartInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.07"
+                android:visibility="visible" android:tag="binding_1">
+
+                <include
+                    android:id="@+id/sweptSaInfo"
+                    layout="@layout/swept_sa"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--        ACLR Info-->
+            <LinearLayout
+                android:id="@+id/linAclrInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/mode_boundary"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1" android:tag="binding_2">
+
+                <include
+                    android:id="@+id/aclrInfo"
+                    layout="@layout/aclr_layout" />
+
+            </LinearLayout>
+            <!--        Spurious Emission-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conSpuriousInfoParent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/mode_boundary"
+                android:visibility="gone" android:tag="binding_3">
+
+                <include
+                    android:id="@+id/spuriousEmission"
+                    layout="@layout/spurious_emission_layout" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--        SEM Info-->
+            <LinearLayout
+                android:id="@+id/linSemInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1" android:tag="binding_4">
+
+                <include
+                    android:id="@+id/semLayout"
+                    layout="@layout/sem_layout" />
+
+            </LinearLayout>
+            <!--        Channel Power Info-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conChannelPower"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/mode_boundary"
+                android:visibility="gone" android:tag="binding_5">
+
+                <include
+                    android:id="@+id/channelPowerLayout"
+                    layout="@layout/ch_power_layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--        Occupied BW Info-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conOccupiedBW"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/mode_boundary"
+                android:visibility="gone" android:tag="binding_6">
+
+                <include
+                    android:id="@+id/occBwLayout"
+                    layout="@layout/occ_bw_layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--        Transmit on/off Info-->
+            <LinearLayout
+                android:id="@+id/linTransmitOnOffInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:visibility="gone" android:tag="binding_7">
+
+                <include
+                    android:id="@+id/transmitOnOffLayout"
+                    layout="@layout/transmit_on_off_layout" />
+
+            </LinearLayout>
+
+            <!--        Interference hunting info-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conInterferenceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/mode_boundary"
+                android:visibility="gone" android:tag="binding_8">
+
+                <include
+                    android:id="@+id/interferenceInfo"
+                    layout="@layout/interference_hunting_layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--        Gate Info-->
+            <LinearLayout
+                android:id="@+id/linGateView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="1" android:tag="binding_9">
+
+                <include
+                    android:id="@+id/gateLayout"
+                    layout="@layout/gate_layout" />
+
+            </LinearLayout>
+
+            <!-- Marker Table -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conMarkerTableParent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.1"
+                android:background="#fff"
+                android:visibility="gone" android:tag="binding_10">
+
+                <include
+                    android:id="@+id/markerTableLayout"
+                    layout="@layout/marker_table_layout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

@@ -1,0 +1,178 @@
+[Num of Preset]
+numOfPreset = 5
+
+[0]
+name = Clock
+numOfList = 1
+
+single0 = 9.5 10.5
+single0Freq = 10
+single0Title = 10 MHz
+single0Standard = Clock 0
+
+modeVisible = SA
+typeVisible = SWEPT_SA
+
+
+[1]
+name = IF
+numOfList = 3
+width = 1 1.5 1.5
+
+dl0 = 112.5 142.5
+dl0Freq = 127.5
+dl0Title = 800M/2.6G(10M)\nDL 127.5 MHz
+dl0Standard = LTE 10
+
+ul0 = 62.5 92.5
+ul0Freq = 77.5
+ul0Title = 800M/2.6G(10M)\nUL 77.5 MHz
+ul0Standard = LTE 10
+
+dl1 = 100 145
+dl1Freq = 122.5
+dl1Title = 삼성/ELG 1.8G/2.1G/2.6G(20M)\nDL 122.5 MHz
+dl1Standard = LTE 20
+
+ul1 = 50 95
+ul1Freq = 72.5
+ul1Title = 삼성/ELG 1.8G/2.1G/2.6G(20M)\nUL 72.5 MHz
+ul1Standard = LTE 15
+
+dl2 = 101.1 146.1
+dl2Freq = 123.6
+dl2Title = Nokia 1.8G/2.1G/2.6G(20M)\nDL 123.6 MHz
+dl2Standard = LTE 20
+
+ul2 = 51.1 96.1
+ul2Freq = 73.6
+ul2Title = Nokia 1.8G/2.1G/2.6G(20M)\nUL 73.6 MHz
+ul2Standard = LTE 15
+
+
+modeVisible = SA
+typeVisible = SWEPT_SA, CHANNEL_POWER, OCCUPIED_BW, ACLR
+
+
+
+[2]
+name = 3G WCDMA
+numOfList = 2
+
+dl0 = 2140 2145.2
+dl0Freq = 2142.6
+dl0Title = DL\n2142.6 MHz
+dl0Standard = WCDMA 0
+
+ul0 = 1950 1955.2
+ul0Freq = 1952.6
+ul0Title = UL\n1952.6 MHz
+ul0Standard = WCDMA 0
+
+modeVisible = SA, VSWR, DTF, CL, MOD_ACCURACY
+typeVisible = SWEPT_SA, CHANNEL_POWER, OCCUPIED_BW, ACLR, VSWR, RL, DTF_VSWR, DTF_RL, CABLE_LOSS, NR_5G, LTE_FDD, TRANSMIT_MASK, INTERFERENCE_HUNTING
+
+
+
+[3]
+name = 4G LTE
+numOfList = 5
+
+dl0 = 874 884
+dl0Freq = 879
+dl0Title = DL\n879 MHz
+dl0Standard = LTE 10
+
+ul0 = 829 839
+ul0Freq = 834
+ul0Title = UL\n834 MHz
+ul0Standard = LTE 10
+
+dl1 = 1810 1830
+dl1Freq = 1820
+dl1Title = DL\n1820 MHz
+dl1Standard = LTE 20
+
+ul1 = 1715 1735
+ul1Freq = 1725
+ul1Title = UL\n1725 MHz
+ul1Standard = LTE 20
+
+dl2 = 2130 2140
+dl2Freq = 2135
+dl2Title = DL\n2135 MHz
+dl2Standard = LTE 10
+
+ul2 = 1940 1950
+ul2Freq = 1945
+ul2Title = UL\n1945 MHz
+ul2Standard = LTE 10
+
+dl3 = 2620 2640
+dl3Freq = 2630
+dl3Title = DL\n2630 MHz
+dl3Standard = LTE 20
+
+ul3 = 2500 2520
+ul3Freq = 2510
+ul3Title = UL\n2510 MHz
+ul3Standard = LTE 20
+
+dl4 = 2660 2670
+dl4Freq = 2665
+dl4Title = DL\n2665 MHz
+dl4Standard = LTE 10
+
+ul4 = 2540 2550
+ul4Freq = 2545
+ul4Title = UL\n2545 MHz
+ul4Standard = LTE 10
+
+profile = MHZ10, MHZ20, MHZ10, MHZ20, MHZ10
+
+modeVisible = SA, VSWR, DTF, CL, MOD_ACCURACY
+typeVisible = SWEPT_SA, CHANNEL_POWER, OCCUPIED_BW, ACLR, VSWR, RL, DTF_VSWR, DTF_RL, CABLE_LOSS, NR_5G, LTE_FDD, TRANSMIT_MASK, INTERFERENCE_HUNTING
+
+
+
+[4]
+
+name = 5G NR
+numOfList = 3
+
+dl0 = 3600.01 3700.01
+dl0Freq = 3650.01
+dl0Title = SKT DL\n3650.01 MHz
+dl0Standard = 5GNR 100
+
+ul0 = 3600.01 3700.01
+ul0Freq = 3650.01
+ul0Title = SKT UL\n3650.01 MHz
+ul0Standard = 5GNR 100
+
+dl1 = 3499.99 3599.99
+dl1Freq = 3549.99
+dl1Title = KT DL\n3549.99 MHz
+dl1Standard = 5GNR 100
+
+ul1 = 3499.99 3599.99
+ul1Freq = 3549.99
+ul1Title = KT UL\n3549.99 MHz
+ul1Standard = 5GNR 100
+
+dl2 = 3419.99 3499.99
+dl2Freq = 3459.99
+dl2Title = LGU+ DL\n3459.99 MHz
+dl2Standard = 5GNR 80
+
+ul2 = 3419.99 3499.99
+ul2Freq = 3459.99
+ul2Title = LGU+ UL\n3459.99 MHz
+ul2Standard = 5GNR 80
+
+profile = MHZ100, MHZ100, MHZ80
+
+modeVisible = SA, VSWR, DTF, CL, MOD_ACCURACY
+typeVisible = SWEPT_SA, CHANNEL_POWER, OCCUPIED_BW, ACLR, VSWR, RL, DTF_VSWR, DTF_RL, CABLE_LOSS, NR_5G, LTE_FDD, TRANSMIT_MASK, INTERFERENCE_HUNTING
+
+

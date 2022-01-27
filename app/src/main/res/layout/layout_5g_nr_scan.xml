@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lin5gNrScan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/division" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.34">
+
+            <TableLayout
+                android:id="@+id/tableNrScan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/list_line">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:paddingStart="@dimen/list_line"
+                    android:paddingTop="@dimen/list_line"
+                    android:paddingBottom="@dimen/list_line">
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_index" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_name" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="@string/nrs_freq" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="@string/nrs_ssb_freq" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_pci" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_ssb_index" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="@string/nrs_ss_rsrp" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="@string/nrs_ss_rsrq" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="@string/nrs_ss_sinr" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="@string/nrs_timing_offset" />
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:maxLines="2"
+                        android:text="@string/nrs_tae" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/list_line"
+                    android:paddingBottom="@dimen/list_line">
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="1" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvName_1"
+                        style="@style/ListTextView"
+                        android:text="SKT" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvFreq_1"
+                        style="@style/ListTextView"
+                        android:text="3650.01" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBFreq_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvPCI_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBIndex_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRP_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRQ_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_SINR_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTimingOffset_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTAE_1"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/list_line"
+                    android:paddingBottom="@dimen/list_line">
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="2" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvName_2"
+                        style="@style/ListTextView"
+                        android:text="KT" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvFreq_2"
+                        style="@style/ListTextView"
+                        android:text="3549.99" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBFreq_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvPCI_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBIndex_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRP_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRQ_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_SINR_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTimingOffset_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTAE_2"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/list_line"
+                    android:paddingBottom="@dimen/list_line">
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="3" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvName_3"
+                        style="@style/ListTextView"
+                        android:text="LGU+" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvFreq_3"
+                        style="@style/ListTextView"
+                        android:text="3459.99" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBFreq_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvPCI_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBIndex_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRP_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRQ_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_SINR_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTimingOffset_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTAE_3"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/list_line"
+                    android:paddingBottom="@dimen/list_line">
+
+                    <me.grantland.widget.AutofitTextView
+                        style="@style/ListTextView"
+                        android:text="4" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvName_4"
+                        style="@style/ListTextView"
+                        android:text="--" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvFreq_4"
+                        style="@style/ListTextView"
+                        android:text="3000" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBFreq_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvPCI_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSSBIndex_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRP_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_RSRQ_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSS_SINR_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTimingOffset_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTAE_4"
+                        style="@style/ListTextView"
+                        android:text="@string/nrs_not_value" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/division" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.33">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartTrace1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvChart1Title"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="80dp"
+                android:singleLine="true"
+                android:text="@string/nrs_pci"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:minTextSize="8dp" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/division" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.33">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartTrace2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvChart2Title"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="80dp"
+                android:singleLine="true"
+                android:text="@string/timing_offset"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:minTextSize="8dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

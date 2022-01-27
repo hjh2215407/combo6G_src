@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|top" android:tag="layout/swept_sa_0">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gOffset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.49" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/gHorizonCenter"
+            app:layout_constraintEnd_toStartOf="@id/conOffset"
+            app:layout_constraintStart_toEndOf="@id/conVbw"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvRef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ref_label"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvRefVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-20 dBm"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tvRef"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conOffset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/gHorizonCenter"
+            app:layout_constraintEnd_toStartOf="@id/conSpan"
+            app:layout_constraintStart_toEndOf="@id/conRef"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvOffset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offset_label"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvOffsetVal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvOffsetVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 dB"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvOffset"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conAtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/conSweep"
+            app:layout_constraintStart_toEndOf="@id/conRbw"
+            app:layout_constraintTop_toBottomOf="@id/gHorizonCenter">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvAtten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/atten_label"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvAttenVal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvAttenVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 dB"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvAtten"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gMarkerTable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.642" />
+
+        <!--                                    <me.grantland.widget.AutofitTextView-->
+        <!--                                        android:id="@+id/tvTemp1"-->
+        <!--                                        android:layout_width="wrap_content"-->
+        <!--                                        android:layout_height="wrap_content"-->
+        <!--                                        android:text=""-->
+        <!--                                        android:textColor="#ffff00"-->
+        <!--                                        android:textStyle="bold"-->
+        <!--                                        android:singleLine="true"-->
+        <!--                                        app:layout_constraintLeft_toRightOf="@id/gMarkerTable"-->
+        <!--                                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                                        app:layout_constraintRight_toLeftOf="@id/tvTemp2"/>-->
+
+        <!--                                    <me.grantland.widget.AutofitTextView-->
+        <!--                                        android:id="@+id/tvTemp2"-->
+        <!--                                        android:layout_width="wrap_content"-->
+        <!--                                        android:layout_height="wrap_content"-->
+        <!--                                        android:text=""-->
+        <!--                                        android:textColor="#ffff00"-->
+        <!--                                        android:textStyle="bold"-->
+        <!--                                        android:singleLine="true"-->
+        <!--                                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                                        app:layout_constraintLeft_toRightOf="@id/tvTemp1"-->
+        <!--                                        app:layout_constraintRight_toLeftOf="@id/conMarkerInfo"/>-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gHorizonCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conVbw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/gHorizonCenter"
+            app:layout_constraintEnd_toStartOf="@id/conRef"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvVbwLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VBW : "
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tvVbwVal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvVbwVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 kHz"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvVbwLabel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gLeftBottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="31dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gRightBottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gBottomHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conRbw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/conAtten"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gHorizonCenter">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvRbwLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RBW : "
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tvRbwVal" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvRbwVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 kHz"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tvRbwLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/gHorizonCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/conOffset"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpanLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Span : "
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tvSpanVal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpanVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.05 GHz"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvSpanLabel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conSweep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/conAtten"
+            app:layout_constraintTop_toBottomOf="@id/gHorizonCenter">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSweepLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweep Time : "
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvSweepVal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSweepVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0 ms"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvSweepLabel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

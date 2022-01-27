@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="#404040"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3c4286"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/gps_info"
+                    android:textColor="@color/selText"
+                    android:textSize="@dimen/big_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            style="@style/GpsInfoTextView"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/gps_date" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            style="@style/GpsInfoTextView"
+                            android:text="@string/gps_time" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@color/norText" />
+
+                        <TextView
+                            android:id="@+id/tvLat"
+                            style="@style/GpsInfoTextView"
+                            android:text="@string/gps_lat" />
+
+                        <TextView
+                            android:id="@+id/tvLong"
+                            style="@style/GpsInfoTextView"
+                            android:text="@string/gps_lon" />
+
+                        <TextView
+                            android:id="@+id/tvAlt"
+                            style="@style/GpsInfoTextView"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/gps_alt" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/norText" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <TextView
+                                android:id="@+id/tvGpsStatus"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_weight="0.5"
+                                android:background="#d9d9d9"
+                                android:gravity="center"
+                                android:text="@string/gps_status"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/big_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvGpsStatusVal"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.5"
+                                android:background="#FFF2CC"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/big_text_size" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+
+                            <TextView
+                                android:id="@+id/tvGpsAntStatus"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_weight="0.5"
+                                android:background="#d9d9d9"
+                                android:gravity="center"
+                                android:text="@string/gps_ant_status"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/big_text_size" />
+
+                            <TextView
+                                android:id="@+id/tvGpsAntStatusVal"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.5"
+                                android:background="#FFF2CC"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/big_text_size" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/norText" />
+
+                <TextView
+                    style="@style/GpsInfoTextView"
+                    android:gravity="center"
+                    android:text="@string/gps_cnr" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/close"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

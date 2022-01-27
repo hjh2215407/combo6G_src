@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/outside_border" android:tag="layout/lte_fdd_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightArea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintLeft_toRightOf="@id/middleArea"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.35">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/signalQualityTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/demodulation_title_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/signal_quality"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/lte_title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/signalQualityContentParent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signalQualityTitle"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/tableGuidLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_percent="0.25"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/signalQualityHorizontalGuide1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:layout_constraintGuide_percent="0.025" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/signalQualityTableParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/linSignalInfoParent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvFrequencyOffsetTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Frequency Offset"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvThresholdTitle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvThresholdTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/threshold_0_05ppm_12_hz"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvThresholdValue"
+                        app:layout_constraintEnd_toStartOf="@id/tvPpmTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvFrequencyOffsetTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.5" />
+
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvThresholdValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="±194.50"
+                        android:textColor="#ff0"
+                        android:textSize="@dimen/lte_content_size"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@id/tvPpmValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvThresholdTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.5" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvPpmTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/ppm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvPpmValue"
+                        app:layout_constraintEnd_toStartOf="@id/tvHzTitle"
+                        app:layout_constraintStart_toEndOf="@id/tvThresholdTitle"
+                        app:layout_constraintTop_toBottomOf="@id/tvFrequencyOffsetTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.175" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvPpmValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="--.--"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintStart_toEndOf="@id/tvThresholdValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvPpmTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.175" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvHzTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/hz"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvHzValue"
+                        app:layout_constraintStart_toEndOf="@id/tvPpmTitle"
+                        app:layout_constraintTop_toBottomOf="@id/tvFrequencyOffsetTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.175" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvHzValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="--.--"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintStart_toEndOf="@id/tvPpmValue"
+                        app:layout_constraintTop_toBottomOf="@id/tvHzTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.175" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvFreqOffsetResult"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/pass_mark"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="@id/tvHzValue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvHzTitle"
+                        app:layout_constraintTop_toBottomOf="@id/tvFrequencyOffsetTitle"
+                        app:layout_constraintWidth_default="percent"
+                        app:layout_constraintWidth_percent="0.15" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                Table-->
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linSignalInfoParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/signalQualityTableParent">
+
+                    <LinearLayout
+                        android:id="@+id/linSignalInfoTitleParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/signalInfoDevider">
+
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvChannelTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="Channel"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/lte_sub_title_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvEVMTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="EVM(%)"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/lte_sub_title_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPWRTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="PWR(dB)"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/lte_sub_title_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvModTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="Mod"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/lte_sub_title_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvRBTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.15"
+                            android:gravity="left"
+                            android:text="#RB"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/lte_sub_title_size" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/signalInfoDevider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorWhite"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/linSignalInfoTitleParent"
+                        app:layout_constraintBottom_toTopOf="@id/linPssParent"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/linPssParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/signalInfoDevider"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linSssParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPssTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/pss"
+                            android:textColor="@color/lte_pss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPssEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPssPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPssModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPssRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linSssParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/linPssParent"
+                        app:layout_constraintBottom_toTopOf="@id/linPbchParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvSssTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/sss"
+                            android:textColor="@color/lte_sss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvSssEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_sss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvSssPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_sss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvSssModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_sss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvSssRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_sss"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPbchParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/linSssParent"
+                        app:layout_constraintBottom_toTopOf="@id/linPcfichParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPbchTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/pbch"
+                            android:textColor="@color/lte_pbch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPbchEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pbch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPbchPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pbch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPbchModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pbch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPbchRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pbch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPcfichParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPbchParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linPhichParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPcfichTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/pcfich"
+                            android:textColor="@color/lte_pcfich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPcfichEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pcfich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPcfichPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pcfich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPcfichModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pcfich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPcfichRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pcfich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPhichParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPcfichParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linPdcchParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPhichTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/phich"
+                            android:textColor="@color/lte_phich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPhichEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_phich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPhichPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_phich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPhichModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_phich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPhichRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_phich"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPdcchParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPhichParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linCrsParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdcchTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/pdcch"
+                            android:textColor="@color/lte_pdcch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdcchEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="--.--"
+                            android:textColor="@color/lte_pdcch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdcchPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="--.--"
+                            android:textColor="@color/lte_pdcch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdcchModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="--"
+                            android:textColor="@color/lte_pdcch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdcchRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdcch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linCrsParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPdcchParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linPdschQpskParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCrsTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/crs"
+                            android:textColor="@color/lte_crs"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCrsEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_crs"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCrsPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_crs"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCrsModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_crs"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCrsRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_crs"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCrsPassFail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_crs"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPdschQpskParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linCrsParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linPdsch16qamParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdschQpskTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/pdsch"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdschQpskEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdschQpskPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdschQpskModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdschQpskRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPdsch16qamParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPdschQpskParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linPdsch64QamParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch16QamTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch16QamEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch16QamPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch16QamModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch16QamRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPdsch64QamParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPdsch16qamParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/linPdsch256qamParent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch64QamTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch64QamEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch64QamPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch64QamModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch64QamRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linPdsch256qamParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1"
+                        app:layout_constraintTop_toBottomOf="@id/linPdsch64QamParent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch256QamTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch256QamEvmValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch256QamPwrValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text="@string/no_data_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch256QamModValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvPdsch256QamRbValue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.075"
+                            android:gravity="center"
+                            android:text="@string/no_type_mark"
+                            android:textColor="@color/lte_pdsch"
+                            android:textSize="@dimen/lte_content_size" />
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/middleArea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/outside_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/leftArea"
+            app:layout_constraintRight_toLeftOf="@id/rightArea"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.25">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cellInformationParent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/outside_border"
+                app:layout_constraintBottom_toTopOf="@id/powerInformationParent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/cellInformationTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/demodulation_title_border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/cell_information"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/lte_title"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/cellInformationContentParent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cellInformationContentParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cellInformationTitle">
+
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvChBandWidthTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Channel Bandwidth : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvLtePhysicalCellIdTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvChBandWidthValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- MHz"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvLtePhysicalCellIdValue"
+                        app:layout_constraintStart_toStartOf="@id/cellInfoVerticalGuide"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvLtePhysicalCellIdTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Physical Cell ID : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvGroupIdTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvChBandWidthTitle" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvLtePhysicalCellIdValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvGroupIdValue"
+                        app:layout_constraintStart_toStartOf="@id/cellInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvChBandWidthValue" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvGroupIdTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Group ID : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvSectorTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvLtePhysicalCellIdTitle" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvGroupIdValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvSectorValue"
+                        app:layout_constraintStart_toStartOf="@id/cellInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvLtePhysicalCellIdValue" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSectorTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Sector ID : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvGroupIdTitle" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvSectorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/cellInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvGroupIdValue" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/cellInfoVerticalGuide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintGuide_percent="0.7" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/powerInformationParent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/outside_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cellInformationParent">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/powerInformationTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/demodulation_title_border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/power_information"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/lte_title"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/powerInformationContentParent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/powerInformationContentParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/powerInformationTitle">
+
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsTitle0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="RSRP(RS0) : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrpRsTitle1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsValue0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- dBm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrpRsValue1"
+                        app:layout_constraintStart_toStartOf="@id/powerInfoVerticalGuide"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="RSRP(RS1) : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrpRsTitle2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsTitle0" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsValue1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- dBm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrpRsValue2"
+                        app:layout_constraintStart_toStartOf="@id/powerInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsValue0" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="RSRP(RS2) : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrpRsTitle3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsTitle1" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsValue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- dBm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrpRsValue3"
+                        app:layout_constraintStart_toStartOf="@id/powerInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsValue1" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="RSRP(RS3) : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrqTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsTitle2" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrpRsValue3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- dBm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvRsrqValue"
+                        app:layout_constraintStart_toStartOf="@id/powerInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsValue2" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrqTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="RSRQ : "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvExpectedTxMaxPowerTitle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsTitle3" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvRsrqValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- dB"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toTopOf="@id/tvExpectedTxMaxPowerValue"
+                        app:layout_constraintStart_toStartOf="@id/powerInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrpRsValue3" />
+
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvExpectedTxMaxPowerTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/exp_max_tx_power"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrqTitle" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvExpectedTxMaxPowerValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--.-- dBm"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/powerInfoVerticalGuide"
+                        app:layout_constraintTop_toBottomOf="@id/tvRsrqValue" />
+
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/powerInfoVerticalGuide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintGuide_percent="0.7" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftArea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/middleArea"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/antennaInformationParent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/outside_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeInformationParent">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/antennaInformationTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/demodulation_title_border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/antenna_information"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/lte_title"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/antennaInfoContentParent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/antennaInfoContentParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/antennaInformationTitle">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAntenna0"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/white_square"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvAnt0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvAnt0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="Ant 0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ivAntenna1"
+                        app:layout_constraintStart_toEndOf="@id/ivAntenna0"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAntenna1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/white_square"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvAnt1"
+                        app:layout_constraintStart_toEndOf="@id/tvAnt0"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvAnt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="Ant 1"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ivAntenna2"
+                        app:layout_constraintStart_toEndOf="@id/ivAntenna1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAntenna2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/white_square"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvAnt2"
+                        app:layout_constraintStart_toEndOf="@id/tvAnt1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvAnt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="Ant 2"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/ivAntenna3"
+                        app:layout_constraintStart_toEndOf="@id/ivAntenna2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAntenna3"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/white_square"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tvAnt3"
+                        app:layout_constraintStart_toEndOf="@id/tvAnt2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvAnt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="Ant 3"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivAntenna3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constellationParent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/outside_border"
+                app:layout_constraintBottom_toTopOf="@id/timeInformationParent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/constellationTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/demodulation_title_border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/i_q_constellation"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/lte_title"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_default="percent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.github.mikephil.charting.charts.ScatterChart
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:id="@+id/scatterChart"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/constellationTitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/timeInformationParent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/outside_border"
+                app:layout_constraintBottom_toTopOf="@id/antennaInformationParent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constellationParent"
+                tools:layout_constraintBottom_toTopOf="@id/antennaInformationParent"
+                tools:layout_constraintTop_toBottomOf="@id/constellationParent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/timeInformationTitleParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/timeInformationTableParent">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/timeInformationTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/demodulation_title_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/time_information"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_title"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/timeInformationTableParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/timeInformationTitleParent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/horizontalGuide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_percent="0.5"
+                        app:layout_constraintHorizontal_bias="0.0"/>
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/verticalGuide1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintGuide_percent="0.05" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/verticalGuide2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintGuide_percent="0.4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/verticalGuide3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintGuide_percent="0.55"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/verticalGuide4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.7" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/verticalGuide5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.85" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/verticalGuide6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="10dp"
+                        app:layout_constraintGuide_percent="0.95"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/timingOffsetTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/timing_offset"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="@id/horizontalGuide"
+                        app:layout_constraintEnd_toStartOf="@id/verticalGuide2"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide1" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/timingOffsetValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/ns_unit_default"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintBottom_toBottomOf="@id/horizontalGuide"
+                        app:layout_constraintEnd_toEndOf="@id/verticalGuide6"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide2" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/timeAlignmentErrorTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:singleLine="true"
+                        android:text="@string/time_alignment_error"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        android:gravity="center"
+                        app:layout_constraintEnd_toEndOf="@+id/verticalGuide2"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide1"
+                        app:layout_constraintTop_toTopOf="@id/horizontalGuide" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/timeAlignmentErrorValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/ns_unit_default"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintEnd_toEndOf="@+id/verticalGuide3"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide2"
+                        app:layout_constraintTop_toTopOf="@id/horizontalGuide" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/thrdTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/thrd"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintEnd_toEndOf="@+id/verticalGuide4"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide3"
+                        app:layout_constraintTop_toTopOf="@id/horizontalGuide" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/thrdValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/ns_unit_default"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintEnd_toEndOf="@+id/verticalGuide5"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide4"
+                        app:layout_constraintTop_toTopOf="@id/horizontalGuide" />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/timeAlignmentErrorResult"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/outside_border"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/pass_short"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/lte_content_size"
+                        app:layout_constraintEnd_toEndOf="@id/verticalGuide6"
+                        app:layout_constraintStart_toStartOf="@id/verticalGuide5"
+                        app:layout_constraintTop_toTopOf="@id/horizontalGuide" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signalQualityParent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

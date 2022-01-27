@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <LinearLayout
+        android:id="@+id/linParent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1" android:tag="layout/fw_update_dialog_0">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@color/colorDialogTitle"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:background="@color/colorDialogTitle">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/fw_update_title"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        autofit:minTextSize="2dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorDialogTitle"
+                    android:layout_weight="0.05" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorDialogTitle"
+                        android:layout_weight="0.03" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.94"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvUpdateFileList"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/recall_list_view_box"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorDialogTitle"
+                        android:layout_weight="0.03" />
+
+                </LinearLayout>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvUpdateInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:background="@color/colorDialogTitle"
+                    android:textColor="@color/colorBlack"
+                    android:layout_weight="0.25" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:background="@color/colorDialogTitle"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvOK"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/save_bottom_button_selector"
+                            android:gravity="center"
+                            android:text="@string/ok_name"
+                            android:textColor="@color/right_menu_text_selector" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/save_bottom_button_selector"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/cancel_name"
+                            android:textColor="@color/right_menu_text_selector" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+         

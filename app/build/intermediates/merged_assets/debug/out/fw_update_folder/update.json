@@ -1,0 +1,24 @@
+{
+  "description": "Information for PACT Firmware Update",
+  "firmware": [
+    {
+      "pact-linux-app.elf": "4.1.2.08"
+    },
+    {
+      "vswr.bit.bin": "v40D"
+    },
+    {
+      "sa.bit.bin": "v40D"
+    },
+    {
+      "lte5g.bin": "49D"
+    }
+  ],
+  "md5": [
+    "elf.md5",
+    "vswr.md5",
+    "sa.md5",
+    "lte5g.md5"
+  ],
+  "path": "/run/media/mmcblk0p1/fw/"
+}

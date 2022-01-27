@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="3dp"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/cardParent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorDialogContent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/ssidTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:textColor="@color/colorBlack"
+                android:textSize="13dp"
+                android:singleLine="true"
+                app:minTextSize="2dp"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/bssidTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:textSize="13dp"
+                app:minTextSize="2dp"/>
+
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/rssiLevelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:textColor="@color/colorBlack"
+                android:textSize="13dp"
+                android:singleLine="true"
+                app:minTextSize="2dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

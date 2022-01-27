@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
+
+            <!--            <me.grantland.widget.AutofitTextView-->
+            <!--                android:id="@+id/tvOccupiedBW"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/occupied_bandwidth"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintBottom_toTopOf="@id/gOccHorizonLine"-->
+            <!--                app:layout_constraintLeft_toRightOf="@id/gOccupiedLeft"-->
+            <!--                app:layout_constraintRight_toLeftOf="@id/tvOccBWVal"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvOccBWVal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center_vertical|start"
+                android:text="-78.68 dBm / 3.84 MHz"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <!--            <me.grantland.widget.AutofitTextView-->
+            <!--                android:id="@+id/tvTotalPower"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/total_power"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textStyle="bold"-->
+            <!--                app:layout_constraintBottom_toTopOf="@id/gOccHorizonLine"-->
+            <!--                app:layout_constraintRight_toLeftOf="@id/tvTotalPowerVal"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvTotalPowerVal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center_vertical|end"
+                android:text="78.69 dBm"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
+
+            <!--            <me.grantland.widget.AutofitTextView-->
+            <!--                android:id="@+id/tvXDBBW"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="x dB Bandwidth : "-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:visibility="invisible"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintLeft_toRightOf="@id/gOccupiedLeft"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/gOccHorizonLine" />-->
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvXDBBWVal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center_vertical|start"
+                android:text="101.26 MHz"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <!--            <me.grantland.widget.AutofitTextView-->
+            <!--                android:id="@+id/tvXDB"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/xdb_val"-->
+            <!--                android:textColor="@color/colorWhite"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:visibility="invisible"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintRight_toLeftOf="@id/tvXDBVal"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/gOccHorizonLine" />-->
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvXDBVal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:gravity="center_vertical|end"
+                android:text="-26.00 dB"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/transmit_on_off_layout_0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.021"
+                android:background="@null" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvTransmitInfoBwTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.165"
+                android:gravity="left|center_vertical"
+                android:text="Info BW : "
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvTransmitInfoBwVal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.165"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/mode_boundary"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.021"
+                android:background="@null" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitOnPowerTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center_vertical"
+                    android:text="On Power : "
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitOnPowerVal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center_vertical"
+                    android:text="--.-- dBm"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.021"
+                android:background="@null" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.479"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitOffPowerTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center_vertical"
+                    android:text="Off Power : "
+                    android:textColor="@color/colorWhite" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitOffPowerVal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:singleLine="true"
+                    android:gravity="left|center_vertical"
+                    android:text="--.-- dBm/1MHz"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitOffPowerPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#21FFFF"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.021"
+                android:background="@null" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.479"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitRampUpTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="left|center_vertical"
+                    android:text="Ramp Up : "
+                    android:textColor="@color/colorWhite" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitRampUpVal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:singleLine="true"
+                    android:gravity="left|center_vertical"
+                    android:text="--.-- μs"
+                    android:textColor="@color/colorWhite" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitRampUpPass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textColor="@color/transmit_pass"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.479"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitRampDownTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="left|center_vertical"
+                    android:text="Ramp Down : "
+                    android:textColor="@color/colorWhite" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitRampDownVal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:singleLine="true"
+                    android:gravity="left|center_vertical"
+                    android:text="--.-- μs"
+                    android:textColor="@color/colorWhite" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvTransmitRampDownPass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/transmit_pass"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.021"
+                android:background="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+         

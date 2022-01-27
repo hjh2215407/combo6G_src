@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    <LinearLayout
+        android:id="@+id/linParent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1" android:tag="layout/file_save_dialog_0">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@color/colorDialogTitle"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.13"
+                    android:background="@color/colorDialogTitle">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/save_name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15dp"
+                        autofit:minTextSize="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.74"
+                    android:layout_gravity="center"
+                    android:background="@color/colorDialogContent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorDialogTitle"
+                        android:layout_weight="0.03" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.69"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@null"
+                                android:layout_weight="0.1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvFileName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="12dp"
+                                        android:text="@string/file_name"
+                                        android:textColor="@color/colorBlack" />
+
+                                    <androidx.appcompat.widget.AppCompatEditText
+                                        android:id="@+id/edFileName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:layout_margin="8dp"
+                                        android:gravity="center"
+                                        android:textSize="12dp"
+                                        android:background="@color/colorDialogTitle"/>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvFileType"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="12dp"
+                                        android:text="@string/file_type"
+                                        android:textColor="@color/colorBlack" />
+
+                                    <Spinner
+                                        android:id="@+id/spFileType"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:background="@color/colorDialogTitle"
+                                        android:layout_margin="8dp"
+                                        android:entries="@array/extension"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.9"
+                                android:weightSum="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/linMeasurement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.33"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/save_right_button_selector"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvDat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:textSize="11dp"
+                                        android:gravity="center"
+                                        android:text="@string/save_measure_menu"
+                                        android:textColor="@color/right_menu_text_selector" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linSetup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.33"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/save_right_button_selector"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvStp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:textSize="11dp"
+                                        android:gravity="center"
+                                        android:text="@string/save_setup_menu"
+                                        android:textColor="@color/right_menu_text_selector" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linScreenShot"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.33"
+                                    android:layout_margin="3dp"
+                                    android:background="@drawable/save_right_button_selector"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <me.grantland.widget.AutofitTextView
+                                        android:id="@+id/tvPng"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:textSize="11dp"
+                                        android:gravity="center"
+                                        android:text="@string/save_screenshot_menu"
+                                        android:textColor="@color/right_menu_text_selector" />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorDialogTitle"
+                        android:layout_weight="0.03" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.13"
+                    android:background="@color/colorDialogTitle"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvSave"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/save_bottom_button_selector"
+                            android:gravity="center"
+                            android:text="@string/save_name"
+                            android:textColor="@color/right_menu_text_selector" />
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/tvCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/save_bottom_button_selector"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/cancel_name"
+                            android:textColor="@color/right_menu_text_selector" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+
+         

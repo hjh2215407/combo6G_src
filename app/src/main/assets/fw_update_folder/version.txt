@@ -1,0 +1,5 @@
+lte5g.bin    : 4342b486
+sa.bit.bin   : 4342b409
+vswr.bit.bin : 20120700
+
+pact-linux-app.elf : 4.0.15

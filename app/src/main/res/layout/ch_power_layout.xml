@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <!--        <me.grantland.widget.AutofitTextView-->
+        <!--            android:id="@+id/tvChannelPower"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/channel_power"-->
+        <!--            android:textColor="@color/colorWhite"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintLeft_toRightOf="@id/gChannelLeft"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvChannelPowerVal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:gravity="center_vertical|start"
+            android:text="-78.68 dBm / 3.84 MHz"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <!--        <me.grantland.widget.AutofitTextView-->
+        <!--            android:id="@+id/tvDensity"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/power_spectral_density"-->
+        <!--            android:textColor="@color/colorWhite"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintRight_toLeftOf="@id/tvDensityVal"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvDensityVal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:gravity="center_vertical|end"
+            android:text="-144.28 dBm / Hz"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conSpuriousInfoTitleParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvSpuriousFreqRangeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/freq_range"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvSpuriousRbwTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rbw_title"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintStart_toEndOf="@id/tvSpuriousFreqRangeTitle"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvSpuriousPeakFreqTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/peak_freq"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintStart_toEndOf="@id/tvSpuriousRbwTitle"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvSpuriousPowerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/spurious_power"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintStart_toEndOf="@id/tvSpuriousPeakFreqTitle"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvSpuriousLimitTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/spurious_limit"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.15"
+            app:layout_constraintStart_toEndOf="@id/tvSpuriousPowerTitle"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tvSpuriousResultTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/spurious_result"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            app:layout_constraintWidth_percent="0.1"
+            app:layout_constraintStart_toEndOf="@id/tvSpuriousLimitTitle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conSpuriousInfoTitleParent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rbwGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conSpuriousStartFreqParent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStartFreq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStartFreq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStartFreq1"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStartFreq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStartFreq2"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStartFreq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStartFreq3"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStartFreq5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStartFreq4"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStartFreq6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStartFreq5"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conSpuriousStopFreqParent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintStart_toEndOf="@id/conSpuriousStartFreqParent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStopFreq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStopFreq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStopFreq1"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStopFreq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStopFreq2"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStopFreq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStopFreq3"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStopFreq5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStopFreq4"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvSpuriousStopFreq6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintHeight_percent="0.166"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSpuriousStopFreq5"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rbwGuide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousRbw1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousRbw2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousRbw1"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousRbw3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousRbw2"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousRbw4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousRbw3"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousRbw5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousRbw4"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousRbw6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousRbw5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/peakFreqGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/peakFreqGuide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPeakFreq1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPeakFreq2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPeakFreq1"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPeakFreq3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPeakFreq2"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPeakFreq4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPeakFreq3"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPeakFreq5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPeakFreq4"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPeakFreq6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPeakFreq5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/powerGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/powerGuide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPower1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPower2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPower1"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPower3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPower2"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPower4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPower3"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPower5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPower4"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousPower6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousPower5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/limitGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/limitGuide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousLimit1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousLimit2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousLimit1"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousLimit3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousLimit2"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousLimit4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousLimit3"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousLimit5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousLimit4"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousLimit6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousLimit5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/resultGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/resultGuide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.1">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousResult1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousResult2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousResult1"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousResult3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousResult2"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousResult4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousResult3"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousResult5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousResult4"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tvSpuriousResult6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:gravity="end"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintHeight_percent="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpuriousResult5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

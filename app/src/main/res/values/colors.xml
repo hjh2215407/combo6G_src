@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bg">#000000</color>
+    <color name="bg2">#101010</color>
+
+    <color name="app_title">#5d65b8</color>
+
+    <color name="norText">#cccccc</color>
+    <color name="selText">#FFFFFF</color>
+    <color name="disableText">#444444</color>
+    <color name="selBlackText">#1c1c1c</color>
+    <color name="selGreenText">#097d40</color>
+    <color name="selYellowText">#ffff00</color>
+    <color name="blueText">#7281c9</color>
+    <color name="timeText">#d4d4d4</color>
+
+
+
+    <color name="colorBackground">#D8D8D8</color>
+    <color name="colorSaveButtonBorder">#C8C8C8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="purple">#FF00FF</color>
+
+    <color name="unselect_content_mark">#A5A5A5</color>
+    <color name="select_content_mark">#FFFFFF</color>
+    <color name="colorSelectedBottomBackground">#BDD0E9</color>
+
+    <color name="colorRecallListBoxBorder">#7F8080</color>
+    <color name="colorRecallListViewBorder">#BFBFBF</color>
+    <color name="colorRecallListViewSelected">#E2EFD9</color>
+
+    <color name="colorUnselectedTopBorder">#CCCCCC</color>
+
+    <color name="colorRightMenuTitle">#BDD0E9</color>
+    <color name="colorRightUnselectedButton">#D8D8D8</color>
+    <color name="colorRightSelectedButton">#BDD0E9</color>
+
+    <color name="colorSmallUnselectedButton">#A5A5A5</color>
+    <color name="colorSmallSelectedButton">#FFFFFF</color>
+
+    <!--Dialog-->
+    <color name="colorDialogTitle">#D8D8D8</color>
+    <color name="colorDialogContent">#A5A5A5</color>
+    <color name="colorDialogButton">#D8D8D8</color>
+    <color name="colorCalculator">#F2F2F2</color>
+
+    <color name="colorRightSmallMenuSelectBack">#ff000000</color>
+    <color name="colorRightSmallMenuSelectText">#ffffff00</color>
+    <color name="colorRightSmallMenuUnSelectText">#ff000000</color>
+
+    <color name="colorPassMessageBox">#00ff00</color>
+    <color name="colorFailMessageBox">#ff0000</color>
+
+    <color name="colorChartLine">#ffffff00</color>
+    <color name="colorUnselectedMarkerList">#ffffff</color>
+    <color name="colorSelectedMarkerList">#E2EFD9</color>
+
+    <color name="colorUnselectHighlightLine">#00B0F0</color>
+    <color name="colorSelectHighlightLine">#ff0000</color>
+
+    <color name="colorCalibationBack">#CBFFFF</color>
+
+    <color name="colorCableListBack">#CBFFFF</color>
+    <color name="colorSelectCableList">#C6DCF0</color>
+    <color name="colorUnSelectCableList">#FFFFFF</color>
+
+    <color name="colorBaterryWarningBlue">#BDD7EE</color>
+    <color name="colorBaterryWarningRed">#FF3300</color>
+    <color name="colorBatteryWarningBottom">#F2F2F2</color>
+    <color name="trace_w">#e30035</color>
+    <color name="trace_n">#2f49da</color>
+    <color name="dbm_label">#FFFF00</color>
+
+    <color name="trace1">#FEFF00</color>
+    <color name="trace2">#00B050</color>
+    <color name="trace3">#FFCCFF</color>
+    <color name="trace4">#01B0F0</color>
+    <color name="recall_trace1">#FF00FF</color>
+    <color name="recall_trace2">#FF4F4B</color>
+    <color name="recall_trace3">#c7afb4</color>
+    <color name="recall_trace4">#00FF00</color>
+    <color name="green">#00ff00</color>
+    <color name="aclr_box">#5FA038</color>
+    <color name="gate_box">#5FFF38</color>
+    <color name="aclr_red_box">#ff0000</color>
+    <color name="aclr_blue_box">#0000ff</color>
+    <color name="occ_blue_box">#0000ff</color>
+    <color name="interference_uplink_box">#ff0000</color>
+
+    <color name="marker_table_text">#000000</color>
+
+    <color name="bottom_selected_color">#BDD0E9</color>
+
+    <color name="disable_color">#6e6e6e</color>
+
+    <color name="pss">#fb00ff</color>
+    <color name="sss">#febdff</color>
+    <color name="pbch">#fdb40b</color>
+    <color name="pbch_dmrs">#22fffd</color>
+    <color name="pdcch">#15a43f</color>
+    <color name="pdcch_dmrs">#fc0006</color>
+    <color name="pdsch">#5b1a8e</color>
+    <color name="pdsch_dmrs">#feff09</color>
+
+<!--    lte-->
+    <color name="lte_pss">#fb00ff</color>
+    <color name="lte_sss">#febdff</color>
+    <color name="lte_pbch">#fdb40b</color>
+    <color name="lte_pcfich">#5B1A8E</color>
+    <color name="lte_phich">#15A43F</color>
+    <color name="lte_pdcch">#FEFF09</color>
+    <color name="lte_crs">#21FFFF</color>
+    <color name="lte_pdsch">#0B59B2</color>
+
+    <color name="lte_pass_fail">#22FFFD</color>
+
+    <color name="threshold_value">#feff09</color>
+    <color name="beam_index_power_value">#feff09</color>
+    <color name="beam_index_power_select_value">#fc0006</color>
+    <color name="demodulation_title">#313131</color>
+
+<!--    ACLR-->
+    <color name="aclr_carrier_power">#FFFF00</color>
+    <color name="aclr_abs_limit_line">#22FFFD</color>
+    <color name="aclr_rel_limit_line">#FB00FF</color>
+
+<!--    SEM-->
+    <color name="sem_abs_limit_line">#00FFFF</color>
+    <color name="sem_rel_limit_line">#FD7EFE</color>
+    <color name="grid_line_color">#AAFFFFFF</color>
+    <color name="transmit_pass">#21FFFF</color>
+    <color name="transmit_fail">#FC0006</color>
+
+    <color name="pass">#129FEC</color>
+    <color name="fail">#FA0006</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="tae_c1">#FFFF00</color>
+    <color name="tae_c2">#00FFFF</color>
+    <color name="tae_c3">#FF99FF</color>
+    <color name="tae_c4">#ED7D31</color>
+
+    <color name="ovf_color">#FF0000</color>
+    <color name="ext_color">#92D050</color>
+    <color name="gate_color">#00B0F0</color>
+    <color name="pre_color">#7030A0</color>
+    <color name="sync_color">#FFFF00</color>
+    <color name="trig_color">#ED7D31</color>
+
+    <!-- SPURIOUS EMISSION -->
+    <color name="spurious_emission_dataset_color">#00FFFF</color>
+
+    <color name="list_bg">#000000</color>
+    <color name="list_line">#888888</color>
+
+    <color name="nr_scan_trace1">#FEFF00</color>
+    <color name="nr_scan_trace2">#01B0F0</color>
+    <color name="nr_scan_trace3">#FF00FF</color>
+    <color name="nr_scan_trace4">#FF4F4B</color>
+
+    <color name="division">#8F9090</color>
+
+    <color name="gps_chart_bar">#FFC000</color>
+    <color name="gps_chart_bar_pre">#D9D9D9</color>
+
+</resources>

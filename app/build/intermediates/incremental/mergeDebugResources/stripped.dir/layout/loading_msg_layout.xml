@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" android:tag="layout/loading_msg_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:id="@+id/linWarningMsg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25" />
+
+            <LinearLayout
+                android:id="@+id/linPassFail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" />
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/tvloadingWindow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/loading_window"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true"
+                    android:text="Waiting for response"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:minTextSize="1dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.55" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+         
